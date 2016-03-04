@@ -1,0 +1,73 @@
+/*
+ * Theme's Custom Javascript Main Files
+ */
+jQuery(document).ready(function () {
+
+    // search toggle
+    jQuery(".search-top").click(function () {
+        jQuery("#masthead .search-form-top").slideToggle('500');
+    });
+
+    // scroll up function
+    jQuery("#scroll-up").hide();
+    jQuery(function () {
+        jQuery(window).scroll(function () {
+            if (jQuery(this).scrollTop() > 1000) {
+                jQuery('#scroll-up').fadeIn();
+            } else {
+                jQuery('#scroll-up').fadeOut();
+            }
+        });
+        jQuery('a#scroll-up').click(function () {
+            jQuery('body,html').animate({
+                scrollTop: 0
+            }, 1000);
+            return false;
+        });
+    });
+
+    // gallery post format slider
+    if (typeof jQuery.fn.bxSlider !== 'undefined') {
+        jQuery('.gallery-slider').bxSlider({
+            mode: 'horizontal',
+            speed: 2000,
+            auto: true,
+            pause: 6000,
+            adaptiveHeight: true,
+            pager: false,
+            nextText: '<span class="slide-next"><i class="fa fa-angle-right"></i></span>',
+            prevText: '<span class="slide-prev"><i class="fa fa-angle-left"></i></span>',
+            onSliderLoad: function () {
+                jQuery(".gallery-slider").css("visibility", "visible");
+            }
+        });
+    }
+
+    // setting for the popup featured image
+    if (typeof jQuery.fn.magnificPopup !== 'undefined') {
+        jQuery('.featured-image-popup').magnificPopup({type: 'image'});
+    }
+
+    // Setting for the responsive video using fitvids
+    if (typeof jQuery.fn.fitVids !== 'undefined') {
+        jQuery(".fitvids-video").fitVids();
+    }
+
+});
+
+// setting for masonry layout
+if (typeof jQuery.fn.masonry !== 'undefined') {
+    jQuery(window).load(function () {
+        // setting for masonry layout
+        jQuery('.site-main').masonry({
+            itemSelector: '.masonry-content',
+        });
+    });
+
+    // Handle new items appended by infinite scroll
+    jQuery(document).on('post-load', function () {
+        setInterval(function () {
+            jQuery('.site-main').masonry('reload');
+        }, 600);
+    });
+}
