@@ -1,7 +1,7 @@
 # MASONRY BRICK
 **Masonry Brick**, as its name suggest is a WordPress theme based on the masonry layout which is suitable to display your contents in beautiful way. Some of the features of this theme are as it supports WordPress default custom header and custom background, which can be kept as requirement. Also, this theme features custom social menu and also you have the ability to choose the layout option for each of the different pages/posts individually. This theme also supports all 10 post formats so that you can show the contents uniquely according to the post formats used in your site. You can see the demo of this theme through this link: http://demo.napitwptech.com/masonry-brick.
 
-== COPYRIGHT AND LICENSE ==
+## COPYRIGHT AND LICENSE
 #### External resources linked to the theme.
 * Roboto by Christian Robertson https://www.google.com/fonts/specimen/Roboto
   Apache License, version 2.0
@@ -30,5 +30,8 @@ All the available options of this theme can be used from Appearance > Customize.
 If you've translated this theme into your native language, then, feel free to send the translation file to mebishalnapit@gmail.com and we will include it within the theme from next version update.
 
 ## CHANGELOG
+#### VERSION 0.2
+* Added MB: Random Posts Widget
+
 #### VERSION 0.1
 * Initial release

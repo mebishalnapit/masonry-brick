@@ -44,6 +44,7 @@ if (!function_exists('masonry_brick_setup')) :
         add_theme_support('post-thumbnails');
         add_image_size('masonry-brick-featured-thumbnail', 600, 450, true);
         add_image_size('masonry-brick-featured-full', 840, 630, true);
+        add_image_size('masonry-brick-featured-small-thumbnail', 120, 90, true);
 
         // This theme uses wp_nav_menu() in one location.
         register_nav_menus(array(
@@ -122,13 +123,13 @@ function masonry_brick_dynamic_content_width() {
     if ($masonry_brick_layout_meta == 'default_layout') {
         if (is_page()) {
             if ($masonry_brick_default_page_layout == 'no_sidebar_full_width') {
-                    $content_width = 1350; /* pixels */
+                $content_width = 1350; /* pixels */
             } else {
                 $content_width = 840; /* pixels */
             }
         } elseif (is_single()) {
             if ($masonry_brick_default_post_layout == 'no_sidebar_full_width') {
-                    $content_width = 1350; /* pixels */
+                $content_width = 1350; /* pixels */
             } else {
                 $content_width = 840; /* pixels */
             }
@@ -224,6 +225,8 @@ function masonry_brick_widgets_init() {
         'before_title' => '<h3 class="widget-title"><span>',
         'after_title' => '</span></h3>',
     ));
+
+    register_widget('Masonry_Brick_Random_Posts_Widget');
 }
 
 add_action('widgets_init', 'masonry_brick_widgets_init');
@@ -369,3 +372,8 @@ require get_template_directory() . '/inc/jetpack.php';
  * Add the custom meta box for the single post/page layout option
  */
 require get_template_directory() . '/inc/meta-boxes.php';
+
+/**
+ * Add the required custom widgets
+ */
+require get_template_directory() . '/inc/widgets.php';
