@@ -32,6 +32,7 @@ If you've translated this theme into your native language, then, feel free to se
 == CHANGELOG ==
 = VERSION 0.2 =
 * Added MB: Random Posts Widget
+* Added MB: Tabbed Widget
 
 = VERSION 0.1 =
 * Initial release

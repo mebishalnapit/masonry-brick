@@ -227,6 +227,7 @@ function masonry_brick_widgets_init() {
     ));
 
     register_widget('Masonry_Brick_Random_Posts_Widget');
+    register_widget('Masonry_Brick_Tabbed_Widget');
 }
 
 add_action('widgets_init', 'masonry_brick_widgets_init');

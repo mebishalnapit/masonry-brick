@@ -26,6 +26,16 @@ jQuery(document).ready(function () {
         });
     });
 
+    // tabbed widget tabs panel
+    jQuery(".masonry-brick-tabs a").click(function (event) {
+        event.preventDefault();
+        jQuery(this).parent().addClass("active");
+        jQuery(this).parent().siblings().removeClass("active");
+        var tab = jQuery(this).attr("href");
+        jQuery(".tabs-panel").not(tab).css("display", "none");
+        jQuery(tab).fadeIn();
+    });
+
     // gallery post format slider
     if (typeof jQuery.fn.bxSlider !== 'undefined') {
         jQuery('.gallery-slider').bxSlider({

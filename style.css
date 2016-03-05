@@ -1049,7 +1049,6 @@ a:active {
     float: left;
     width: 100%;
     background-color: #222;
-    z-index: 9999;
 }
 
 .main-navigation ul {
@@ -1643,17 +1642,80 @@ footer .widget_rss li:before {
 }
 
 .random-posts-widget .entry-title {
-    font-size: 18px;
+    font-size: 20px;
     clear: none;
 }
 
 .random-posts-widget .entry-meta {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .random-posts-widget .single-article-content img {
     float: left;
     margin-right: 10px;
+}
+
+/*--------------------------------------------------------------
+# Tabbed widget
+--------------------------------------------------------------*/
+.masonry-brick-tab-content .tabs-panel {
+    display: none;
+}
+
+.masonry-brick-tab-content .popular-tab {
+    display: block;
+}
+
+ul.masonry-brick-tabs li {
+    display: inline-block;
+    width: 32.6%;
+    text-align: center;
+    padding: 6px;
+}
+
+.masonry-brick-tabs .popular .fa, .masonry-brick-tabs .recent .fa, .masonry-brick-tabs .comment .fa {
+    margin-right: 5px;
+}
+
+ul.masonry-brick-tabs {
+    border-bottom: 2px solid #222;
+    margin-bottom: 10px;
+}
+
+ul.masonry-brick-tabs .active {
+    background-color: #222;
+}
+
+ul.masonry-brick-tabs .active a {
+    color: #fff;
+}
+
+.recent-tab .single-article-content img, .popular-tab .single-article-content img {
+    float: left;
+    margin-right: 10px;
+}
+
+.recent-tab .single-article-content .entry-title, .popular-tab .single-article-content .entry-title {
+    font-size: 20px;
+    clear: none;
+}
+
+.recent-tab .single-article-content .entry-meta, .popular-tab .single-article-content  .entry-meta {
+    font-size: 14px;
+}
+
+.comments-tab-widget .avatar {
+    float: left;
+    margin-right: 10px;
+}
+
+li.comments-tab-widget {
+    margin-bottom: 20px;
+}
+
+li.comments-tab-widget p {
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 /*--------------------------------------------------------------

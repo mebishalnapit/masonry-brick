@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Masonry Brick\n"
-"POT-Creation-Date: 2016-03-06 02:29+0545\n"
-"PO-Revision-Date: 2016-03-06 02:29+0545\n"
+"POT-Creation-Date: 2016-03-06 04:02+0545\n"
+"PO-Revision-Date: 2016-03-06 04:02+0545\n"
 "Last-Translator: \n"
 "Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
 "Language: en\n"
@@ -121,17 +121,17 @@ msgstr ""
 msgid "Display your widgets in the Footer Sidebar Area Three."
 msgstr ""
 
-#: functions.php:252
+#: functions.php:253
 msgctxt "Roboto font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:260
+#: functions.php:261
 msgctxt "Lobster font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:268
+#: functions.php:269
 msgctxt "Add new subset ( cyrillic, greek, vietnamese )"
 msgid "no-subset"
 msgstr ""
@@ -458,6 +458,40 @@ msgstr ""
 
 #: inc/widgets.php:26
 msgid "Number of random posts to display:"
+msgstr ""
+
+#: inc/widgets.php:98
+msgid "MB: Tabbed Widget"
+msgstr ""
+
+#: inc/widgets.php:99
+msgid ""
+"Displays the popular posts, recent posts and the recent comments in the "
+"tabs."
+msgstr ""
+
+#: inc/widgets.php:107
+msgid "Number of popular posts, recent posts and comments to display:"
+msgstr ""
+
+#: inc/widgets.php:128
+msgid "Popular"
+msgstr ""
+
+#: inc/widgets.php:129
+msgid "Recent"
+msgstr ""
+
+#: inc/widgets.php:130
+msgid "Comment"
+msgstr ""
+
+#: inc/widgets.php:208
+msgid "says:"
+msgstr ""
+
+#: inc/widgets.php:212
+msgid "No Comments"
 msgstr ""
 
 #: search.php:16
