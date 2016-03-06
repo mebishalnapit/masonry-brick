@@ -13,7 +13,7 @@
 
     <?php
     if (is_page_template('page-template/contact.php')) {
-        $sidebar = 'masonry-brick-contact-sidebar';
+        $sidebar = 'masonry-brick-contact-page-sidebar';
     } else {
         $sidebar = 'masonry-brick-right-sidebar';
     }
@@ -21,7 +21,7 @@
 
     <?php
     if (!dynamic_sidebar($sidebar)) :
-        if ($sidebar == 'masonry-brick-contact-sidebar') {
+        if ($sidebar == 'masonry-brick-contact-page-sidebar') {
             $sidebar_display_text = esc_html__('Contact Page', 'masonry-brick');
         } else {
             $sidebar_display_text = esc_html__('Right', 'masonry-brick');
