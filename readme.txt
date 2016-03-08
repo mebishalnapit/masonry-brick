@@ -9,6 +9,11 @@ External resources linked to the theme.
   SIL Open Font License, 1.1
 
 Resources packed within the theme.
+* Images in the screenshot is from http://pixabay.com/. License: CC0 Public Domain
+    Links: https://pixabay.com/en/winter-wonderland-red-snow-cold-1082511/
+           https://pixabay.com/en/mountain-view-panorama-person-984277/
+           https://pixabay.com/en/photographer-tourist-snapshot-407068/
+           https://pixabay.com/en/work-typing-computer-notebook-731198/
 * Font Awesome by Dave Gandy http://fortawesome.github.io/Font-Awesome/
   SIL OFL 1.1 http://scripts.sil.org/OFL.
 * HTML5 Shiv @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
