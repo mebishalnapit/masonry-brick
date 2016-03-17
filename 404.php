@@ -39,8 +39,6 @@ get_header();
     </main><!-- #main -->
 </div><!-- #primary -->
 
-<?php masonry_brick_sidebar_select(); ?>
-
 <?php do_action('masonry_brick_after_body_content'); ?>
 
 <?php get_footer(); ?>

@@ -343,10 +343,13 @@ figure {
     padding: 0;
 }
 
-input[type="search"] {
-    width: 95%;
-    padding: 10px;
-    max-width: 95%;
+.error404 #primary {
+    width: 100%;
+}
+
+.error-404 {
+    background-color: #fff;
+    padding: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1020,6 +1023,12 @@ textarea {
     max-width: 100%;
 }
 
+input[type="search"] {
+    width: 98%;
+    padding: 10px;
+    max-width: 98%;
+}
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -1503,6 +1512,11 @@ a:active {
     padding: 20px;
 }
 
+.widget input[type="search"] {
+    width: 95%;
+    max-width: 95%;
+}
+
 footer .widget {
     background-color: transparent;
     margin: 0;
@@ -1548,7 +1562,7 @@ footer .widget .widget-title span {
 }
 
 .widget_nav_menu a, .widget_pages a, .widget_recent_comments li, .widget_recent_entries li {
-    border-bottom: 1px solid #4169E1;
+    border-bottom: 1px solid #fff;
     display: block;
     padding: 5px;
 }
@@ -2088,10 +2102,16 @@ li.comments-tab-widget p {
 
 .comment-reply-title {
     font-size: 24px;
+    font-family: Lobster, cursive;
 }
 
 .comments-title {
     font-size: 26px;
+    font-family: Lobster, cursive;
+}
+
+.comment-metadata, .comment-author {
+    font-family: Lobster, cursive;
 }
 
 .comments-area > ol {
