@@ -43,7 +43,7 @@ if (!function_exists('masonry_brick_setup')) :
          */
         add_theme_support('post-thumbnails');
         add_image_size('masonry-brick-featured-thumbnail', 600, 450, true);
-        add_image_size('masonry-brick-featured-full', 840, 630, true);
+        add_image_size('masonry-brick-featured-full', 760, 570, true);
         add_image_size('masonry-brick-featured-small-thumbnail', 120, 90, true);
 
         // This theme uses wp_nav_menu() in one location.
@@ -99,7 +99,7 @@ add_action('after_setup_theme', 'masonry_brick_setup');
  * @global int $content_width
  */
 function masonry_brick_content_width() {
-    $GLOBALS['content_width'] = apply_filters('masonry_brick_content_width', 750);
+    $GLOBALS['content_width'] = apply_filters('masonry_brick_content_width', 760);
 }
 
 add_action('after_setup_theme', 'masonry_brick_content_width', 0);
@@ -123,21 +123,21 @@ function masonry_brick_dynamic_content_width() {
     if ($masonry_brick_layout_meta == 'default_layout') {
         if (is_page()) {
             if ($masonry_brick_default_page_layout == 'no_sidebar_full_width') {
-                $content_width = 1350; /* pixels */
+                $content_width = 1160; /* pixels */
             } else {
-                $content_width = 840; /* pixels */
+                $content_width = 760; /* pixels */
             }
         } elseif (is_single()) {
             if ($masonry_brick_default_post_layout == 'no_sidebar_full_width') {
-                $content_width = 1350; /* pixels */
+                $content_width = 1160; /* pixels */
             } else {
-                $content_width = 840; /* pixels */
+                $content_width = 760; /* pixels */
             }
         }
     } elseif ($masonry_brick_layout_meta == 'no_sidebar_full_width') {
-        $content_width = 1350; /* pixels */
+        $content_width = 1160; /* pixels */
     } else {
-        $content_width = 840; /* pixels */
+        $content_width = 760; /* pixels */
     }
 }
 

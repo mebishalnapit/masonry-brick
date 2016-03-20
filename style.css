@@ -243,7 +243,7 @@ th {
 # Global Layout
 --------------------------------------------------------------*/
 #page {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -253,12 +253,12 @@ th {
 }
 
 .inner-wrap {
-    max-width: 1300px;
+    max-width: 1160px;
     margin: 0 auto;
 }
 
 .boxed #page {
-    max-width: 96%;
+    max-width: 1200px;
     margin: 2% auto;
 }
 
@@ -270,9 +270,13 @@ figure {
     margin: 0;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
     .inner-wrap {
         width: 96%;
+    }
+    
+    .boxed #page {
+        max-width: 96%;
     }
 }
 
