@@ -26,8 +26,8 @@
 
             <header id="masthead" class="site-header" role="banner">
                 <?php if (get_theme_mod('masonry_brick_header_top_bar_activate', 0) == 1) : ?>
-                    <div class="header-top-bar">
-                        <div class="inner-wrap clearfix">
+                    <div class="header-top-bar clear">
+                        <div class="inner-wrap">
                             <?php if (get_theme_mod('masonry_brick_header_text') != '') : ?>
                                 <div class="small-info-text">
                                     <?php echo do_shortcode(wp_kses_post(get_theme_mod('masonry_brick_header_text'))); ?>
