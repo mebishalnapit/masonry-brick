@@ -23,7 +23,6 @@ function masonry_brick_custom_header_setup() {
         'height' => 400,
         'flex-height' => false,
         'wp-head-callback' => 'masonry_brick_header_style',
-        'admin-preview-callback' => 'masonry_brick_admin_header_image',
     )));
 }
 
@@ -72,39 +71,3 @@ if (!function_exists('masonry_brick_header_style')) :
     }
 
 endif;
-
-if (!function_exists('masonry_brick_admin_header_image')) :
-
-    /**
-     * Custom header image markup displayed on the Appearance > Header admin panel.
-     *
-     * @see masonry_brick_custom_header_setup().
-     */
-    function masonry_brick_admin_header_image() {
-        ?>
-        <div id="headimg">
-            <h1 class="displaying-header-text">
-                <a id="name" style="<?php echo esc_attr('color: #' . get_header_textcolor()); ?>" onclick="return false;" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-            </h1>
-            <div class="displaying-header-text" id="desc" style="<?php echo esc_attr('color: #' . get_header_textcolor()); ?>"><?php bloginfo('description'); ?></div>
-            <?php if (get_header_image() && ('blank' == get_header_textcolor())) : ?>
-                <img src="<?php header_image(); ?>" width="<?php echo esc_attr(get_custom_header()->width); ?>" height="<?php echo esc_attr(get_custom_header()->height); ?>" alt="<?php echo get_bloginfo('name', 'display'); ?>" class="header-image">
-            <?php endif; ?>
-
-            <?php
-            if (get_header_image() && !('blank' == get_header_textcolor())) :
-                echo '<div class="site-branding header-background-image" style="background-image: url(' . get_header_image() . ')">';
-            else :
-                echo '<div class="site-branding">';
-            endif;
-            ?>
-
-            <?php masonry_brick_header_text_logo(); // displaying the header text and logo as requirement ?>
-
-            <?php echo '</div>'; ?>
-
-        </div>
-        <?php
-    }
-
-endif; // masonry_brick_admin_header_image
