@@ -182,26 +182,6 @@ function masonry_brick_customize_register($wp_customize) {
 
             $name = '_customize-radio-' . $this->id;
             ?>
-            <style>
-                #masonry-brick-img-container .masonry-brick-radio-img-img {
-                    border: 3px solid #DEDEDE;
-                    margin: 0 5px 5px 0;
-                    cursor: pointer;
-                    border-radius: 3px;
-                    -moz-border-radius: 3px;
-                    -webkit-border-radius: 3px;
-                }
-                #masonry-brick-img-container .masonry-brick-radio-img-selected {
-                    border: 3px solid #AAA;
-                    border-radius: 3px;
-                    -moz-border-radius: 3px;
-                    -webkit-border-radius: 3px;
-                }
-                input[type=checkbox]:before {
-                    content: '';
-                    margin: -3px 0 0 -4px;
-                }
-            </style>
             <span class="customize-control-title"><?php echo esc_html($this->label); ?></span>
             <ul class="controls" id='masonry-brick-img-container'>
                 <?php
@@ -221,18 +201,6 @@ function masonry_brick_customize_register($wp_customize) {
                 endforeach;
                 ?>
             </ul>
-            <script type="text/javascript">
-
-                jQuery(document).ready(function ($) {
-                    $('.controls#masonry-brick-img-container li img').click(function () {
-                        $('.controls#masonry-brick-img-container li').each(function () {
-                            $(this).find('img').removeClass('masonry-brick-radio-img-selected');
-                        });
-                        $(this).addClass('masonry-brick-radio-img-selected');
-                    });
-                });
-
-            </script>
             <?php
         }
 

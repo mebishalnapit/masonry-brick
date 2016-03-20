@@ -1,0 +1,19 @@
+/* setting for the layout option in customizer */
+#masonry-brick-img-container .masonry-brick-radio-img-img {
+    border: 3px solid #DEDEDE;
+    margin: 0 5px 5px 0;
+    cursor: pointer;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+#masonry-brick-img-container .masonry-brick-radio-img-selected {
+    border: 3px solid #AAA;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+input[type=checkbox]:before {
+    content: '';
+    margin: -3px 0 0 -4px;
+}

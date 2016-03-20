@@ -39,6 +39,7 @@ If you've translated this theme into your native language, then, feel free to se
 * Added MB: Random Posts Widget
 * Added MB: Tabbed Widget
 * Screenshot Changed
+* Inline CSS and JavaScript codes removed
 
 = VERSION 0.1 =
 * Initial release
