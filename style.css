@@ -287,16 +287,18 @@ figure {
     display: none;
 }
 
+#content {
+    padding: 5% 0;
+}
+
 #primary {
     width: 62%;
     float: left;
-    margin: 5% 0;
 }
 
 #secondary {
     width: 36%;
     float: right;
-    margin: 5% 0;
 }
 
 #primary.main-contents {
@@ -336,7 +338,7 @@ figure {
 }
 
 .single .hentry, .page .hentry {
-    margin: 0;
+    margin: 0 0 40px;
 }
 
 .post-wrapper, .type-page {
@@ -1245,9 +1247,13 @@ a:active {
     }
 }
 
+.site-main .post-navigation {
+    font-family: Lobster, cursive;
+}
+
 .site-main .comment-navigation,
 .site-main .post-navigation {
-    margin: 40px 0 30px;
+    margin: 0 0 40px;
     overflow: hidden;
     font-size: 18px;
     background-color: #fff;
@@ -1297,7 +1303,7 @@ a:active {
 --------------------------------------------------------------*/
 .navigation.pagination {
     background-color: #fff;
-    margin: 20px 0 40px;
+    margin: 40px 0 0;
     padding: 20px;
     overflow: hidden;
 }
@@ -1785,7 +1791,7 @@ li.comments-tab-widget p {
     text-align: center;
     background-color: #fff;
     padding: 20px;
-    margin: 50px 0 10px;
+    margin: 0 0 50px;
 }
 
 .entry-title, .page-title, .taxonomy-description {
@@ -1796,6 +1802,10 @@ li.comments-tab-widget p {
     font-family: Lobster, cursive;
     font-size: 30px;
     margin: 0;
+    word-wrap: break-word;
+}
+
+.entry-content {
     word-wrap: break-word;
 }
 
@@ -1877,11 +1887,16 @@ li.comments-tab-widget p {
     top: 5%;
 }
 
+.format-gallery .slide-prev {
+    margin-right: 5px;
+}
+
 .format-gallery .slide-prev, .format-gallery .slide-next {
     font-size: 30px;
     background-color: rgba(65,105,225,0.7);
     color: #fff;
-    padding: 3px 10px;
+    padding: 2px 12px;
+    border-radius: 5px;
 }
 
 .format-gallery .slide-prev:hover, .format-gallery .slide-next:hover {
@@ -1973,7 +1988,7 @@ li.comments-tab-widget p {
 .author-box {
     background-color: #fff;
     padding: 20px;
-    margin: 15px 0 20px;
+    margin: 0 0 40px;
     display: inline-block;
     width: 100%;
 }
@@ -2021,7 +2036,7 @@ li.comments-tab-widget p {
 --------------------------------------------------------------*/
 .related-posts-main {
     background-color: #fff;
-    margin: 20px 0;
+    margin: 0 0 40px;
     padding: 20px;
 }
 
@@ -2077,7 +2092,7 @@ li.comments-tab-widget p {
 #comments {
     background-color: #fff;
     padding: 20px;
-    margin: 60px 0 20px;
+    margin: 0 0 40px;
 }
 
 .comment-form label {
