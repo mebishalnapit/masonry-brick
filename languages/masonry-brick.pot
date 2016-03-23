@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Masonry Brick\n"
-"POT-Creation-Date: 2016-03-06 04:02+0545\n"
-"PO-Revision-Date: 2016-03-06 04:02+0545\n"
+"POT-Creation-Date: 2016-03-23 19:43+0545\n"
+"PO-Revision-Date: 2016-03-23 19:44+0545\n"
 "Last-Translator: \n"
 "Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
 "Language: en\n"
@@ -222,68 +222,68 @@ msgstr ""
 msgid "Wide Layout"
 msgstr ""
 
-#: inc/customizer.php:244
+#: inc/customizer.php:212
 msgid "Default layout for pages"
 msgstr ""
 
-#: inc/customizer.php:256
+#: inc/customizer.php:224
 msgid ""
 "Select default layout for pages. This layout will be reflected in all pages "
 "unless unique layout is set for the specific page."
 msgstr ""
 
-#: inc/customizer.php:270
+#: inc/customizer.php:238
 msgid "Default layout for single posts"
 msgstr ""
 
-#: inc/customizer.php:282
+#: inc/customizer.php:250
 msgid ""
 "Select default layout for single posts. This layout will be reflected in all "
 "single posts unless unique layout is set for the specific post."
 msgstr ""
 
-#: inc/customizer.php:296
+#: inc/customizer.php:264
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:309
+#: inc/customizer.php:277
 msgid "Write your custom css and design live."
 msgstr ""
 
-#: inc/customizer.php:318
+#: inc/customizer.php:286
 msgid ""
 "Change the Additional Settings from here as you want to best suite your site."
 msgstr ""
 
-#: inc/customizer.php:320
+#: inc/customizer.php:288
 msgid "Additional Options"
 msgstr ""
 
-#: inc/customizer.php:326
+#: inc/customizer.php:294
 msgid "Related Posts"
 msgstr ""
 
-#: inc/customizer.php:338
+#: inc/customizer.php:306
 msgid "Check to activate the related posts."
 msgstr ""
 
-#: inc/customizer.php:351
+#: inc/customizer.php:319
 msgid "Related Posts To Be Shown As:"
 msgstr ""
 
-#: inc/customizer.php:355
+#: inc/customizer.php:323
 msgid "Related Posts By Categories"
 msgstr ""
 
-#: inc/customizer.php:356
+#: inc/customizer.php:324
 msgid "Related Posts By Tags"
 msgstr ""
 
-#: inc/customizer.php:363
+#: inc/customizer.php:331
 msgid "Image Lightbox"
 msgstr ""
 
-#: inc/customizer.php:375
+#: inc/customizer.php:343
 msgid ""
 "Check to enable the lightbox feature for the featured images in single post "
 "page. Note: the post should be of image post format to support this feature, "
@@ -291,11 +291,11 @@ msgid ""
 "post format is choosen."
 msgstr ""
 
-#: inc/customizer.php:383
+#: inc/customizer.php:351
 msgid "Social Links In Author Bio"
 msgstr ""
 
-#: inc/customizer.php:395
+#: inc/customizer.php:363
 msgid ""
 "Check to enable the social links in the Author Bio section. For this to "
 "work, you need to add the URL of your social sites in the profile section. "
@@ -466,8 +466,7 @@ msgstr ""
 
 #: inc/widgets.php:99
 msgid ""
-"Displays the popular posts, recent posts and the recent comments in the "
-"tabs."
+"Displays the popular posts, recent posts and the recent comments in the tabs."
 msgstr ""
 
 #: inc/widgets.php:107
@@ -571,6 +570,5 @@ msgstr ""
 
 #. translators: %s: Name of current post.
 #: template-parts/content.php:49
-#, php-format
-msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgid "Read More <i class=\"fa fa-arrow-circle-o-right\"></i>"
 msgstr ""

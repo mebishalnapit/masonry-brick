@@ -46,7 +46,7 @@
                     // displaying full content for the sticky post
                     the_content(sprintf(
                                     /* translators: %s: Name of current post. */
-                                    wp_kses(__('Continue reading %s <span class="meta-nav">&rarr;</span>', 'masonry-brick'), array('span' => array('class' => array()))), the_title('<span class="screen-reader-text">"', '"</span>', false)
+                                    wp_kses('<button type="button" class="btn continue-more-link">' . __('Read More <i class="fa fa-arrow-circle-o-right"></i>', 'masonry-brick') . '</button> %s', array('i' => array('class' => array()), 'button' => array('class' => array(), 'type' => array()))), the_title('<span class="screen-reader-text">"', '"</span>', false)
                     ));
                 else :
                     the_excerpt(); // displaying excerpt for the archive pages

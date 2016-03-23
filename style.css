@@ -1762,6 +1762,10 @@ li.comments-tab-widget p {
     color: #222;
 }
 
+.sticky .continue-more-link {
+    border: 1px solid #fff;
+}
+
 .hentry {
     margin: 2% 1.6%;
 }
@@ -1800,7 +1804,7 @@ li.comments-tab-widget p {
 
 .entry-title, .page-title {
     font-family: Lobster, cursive;
-    font-size: 30px;
+    font-size: 28px;
     margin: 0;
     word-wrap: break-word;
 }
