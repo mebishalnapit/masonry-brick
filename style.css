@@ -1333,10 +1333,6 @@ a:active {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-.site-footer {
-    background-color: #222;
-}
-
 .site-info {
     padding: 20px 0;
     background-color: #fff;
@@ -1381,6 +1377,7 @@ a:active {
 .footer-widgets {
     padding: 40px 0 30px;
     border-top: 4px solid #4169E1;
+    background-color: #222;
 }
 
 .footer-sidebar-areas {
@@ -1405,7 +1402,7 @@ a:active {
     }
 
     .footer-copyright {
-        margin-bottom: 5px;
+        padding-bottom: 10px;
         text-align: center;
     }
 
@@ -1415,7 +1412,7 @@ a:active {
     }
 
     ul#footer-menu {
-        padding: 0;
+        padding: 10px 0 0;
         text-align: center;
         border-top: 1px solid #4169E1;
     }
