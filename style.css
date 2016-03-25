@@ -274,7 +274,7 @@ figure {
     .inner-wrap {
         width: 96%;
     }
-    
+
     .boxed #page {
         max-width: 96%;
     }
@@ -1902,6 +1902,11 @@ li.comments-tab-widget p {
 
 .format-gallery .slide-prev:hover, .format-gallery .slide-next:hover {
     background-color: #4169E1;
+}
+
+.format-gallery .slider-images img {
+    display: block;
+    margin: 0 auto;
 }
 
 .format-audio iframe {

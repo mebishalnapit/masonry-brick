@@ -20,7 +20,7 @@
                 <?php if (get_theme_mod('masonry_brick_featured_image_popup', 0) == 1) { ?>
                     <a href="<?php echo $image_popup_url; ?>" class="featured-image-popup" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('masonry-brick-featured-full'); ?></a>
                 <?php } else { ?>
-                    <?php the_post_thumbnail('masonry-brick-featured'); ?>
+                    <?php the_post_thumbnail('masonry-brick-featured-full'); ?>
                 <?php } ?>
             <?php else : ?>
                 <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('masonry-brick-featured-full'); ?></a>
