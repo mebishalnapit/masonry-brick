@@ -1731,7 +1731,9 @@ ul.masonry-brick-tabs .active a {
 }
 
 li.comments-tab-widget {
-    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    font-family: Lobster, cursive;
 }
 
 li.comments-tab-widget p {

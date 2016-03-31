@@ -11,7 +11,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('masonry-content'); ?>>
     <?php do_action('masonry_brick_before_post_content'); ?>
 
-    <?php if (!empty(get_post_gallery())) : ?>
+    <?php if (get_post_gallery()) : ?>
         <ul id="gallery-slider" class="gallery-slider">
             <?php
             $output = '';
