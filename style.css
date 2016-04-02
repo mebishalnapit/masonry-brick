@@ -567,10 +567,15 @@ ul#menu-social {
     -webkit-background-size: cover!important;
 }
 
-.site-title a, .site-description {
+.site-title, .site-description {
     font-family: Lobster, cursive;
     color: #fff;
     text-align: center;
+}
+
+.site-title {
+    margin: 22px 0;
+    font-weight: bold;
 }
 
 .site-title a {
@@ -620,7 +625,7 @@ ul#menu-social {
 }
 
 @media screen and (max-width: 768px) {
-    .site-title a {
+    .site-title a, .site-title {
         font-size: 30px;
     }
 
