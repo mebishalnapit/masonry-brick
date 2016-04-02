@@ -325,6 +325,7 @@ figure {
 }
 
 .masonry-content {
+    float: left;
     width: 30%;
     background-color: #fff;
 }
@@ -567,9 +568,12 @@ ul#menu-social {
     -webkit-background-size: cover!important;
 }
 
+.site-title a, .site-description {
+    color: #fff;
+}
+
 .site-title, .site-description {
     font-family: Lobster, cursive;
-    color: #fff;
     text-align: center;
 }
 
