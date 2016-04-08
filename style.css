@@ -379,10 +379,10 @@ figure {
 /*--------------------------------------------------------------
 # Social menu settings
 --------------------------------------------------------------*/
-#menu-social li a::before {
+#menu-social li a:before {
     display: inline-block;
     padding: 0 10px;
-    font-family: FontAwesome;
+    font-family: "fontawesome";
     vertical-align: middle;
     content: "\f005";
     color: #4169E1;
@@ -1282,16 +1282,16 @@ a:active {
     width: 49%;
 }
 
-.comment-navigation .nav-previous:before,
-.post-navigation .nav-previous:before {
-    font-family: 'fontawesome';
+.comment-navigation .nav-previous a:before,
+.post-navigation .nav-previous a:before {
+    font-family: "fontawesome";
     content: "\f190";
     margin-right: 5px;
 }
 
-.comment-navigation .nav-next:after,
-.post-navigation .nav-next:after {
-    font-family: 'fontawesome';
+.comment-navigation .nav-next a:after,
+.post-navigation .nav-next a:after {
+    font-family: "fontawesome";
     content: "\f18e";
     margin-left: 5px;
 }
@@ -1602,31 +1602,41 @@ footer .widget .widget-title span {
     margin-bottom: 20px;
 }
 
-.widget_recent_entries li:before,
+.widget_recent_entries li a:before,
 .widget_recent_comments li:before,
-.widget_archive li:before,
-.widget_categories li:before,
-.widget_pages li:before,
-.widget_nav_menu li:before,
-.widget_rss li:before {
+.widget_archive li a:before,
+.widget_categories li a:before,
+.widget_pages li a:before,
+.widget_nav_menu li a:before,
+.widget_rss li a:before {
     display: inline-block;
     float: left;
     padding-right: 5px;
-    font-family: 'fontawesome';
+    font-family: "fontawesome";
     color: #222;
 }
 
-footer .widget_recent_entries li:before,
+.widget_recent_entries li a:hover:before,
+.widget_recent_comments li:hover:before,
+.widget_archive li a:hover:before,
+.widget_categories li a:hover:before,
+.widget_pages li a:hover:before,
+.widget_nav_menu li a:hover:before,
+.widget_rss li a:hover:before {
+    color: #4169E1;
+}
+
+footer .widget_recent_entries li a:before,
 footer .widget_recent_comments li:before,
-footer .widget_archive li:before,
-footer .widget_categories li:before,
-footer .widget_pages li:before,
-footer .widget_nav_menu li:before,
-footer .widget_rss li:before {
+footer .widget_archive li a:before,
+footer .widget_categories li a:before,
+footer .widget_pages li a:before,
+footer .widget_nav_menu li a:before,
+footer .widget_rss li a:before {
     color: #fff;
 }
 
-.widget_recent_entries li:before {
+.widget_recent_entries li a:before {
     content: "\f1da";
 }
 
@@ -1634,25 +1644,23 @@ footer .widget_rss li:before {
     content: "\f075";
 }
 
-.widget_archive li:before {
+.widget_archive li a:before {
     content: "\f187";
 }
 
-.widget_categories li:before {
+.widget_categories li a:before {
     content: "\f02d";
 }
 
-.widget_pages li:before {
+.widget_pages li a:before {
     content: "\f039";
-    margin-top: 5px;
 }
 
-.widget_nav_menu li:before {
+.widget_nav_menu li a:before {
     content: "\f0c9";
-    margin-top: 5px;
 }
 
-.widget_rss li:before {
+.widget_rss li a:before {
     content: "\f09e";
 }
 
@@ -2188,23 +2196,27 @@ ol.children {
 }
 
 .comments-area .comment-meta time:before {
-    font-family: 'fontawesome';
+    font-family: "fontawesome";
     content: "\f073";
     margin-right: 2px;
 }
 
-.comments-area .comment-meta .edit-link:before {
-    font-family: 'fontawesome';
+.comments-area .comment-meta .edit-link a:before {
+    font-family: "fontawesome";
     content: "\f044";
     margin-right: 5px;
     color: #222;
 }
 
-.comment-author .fn:before {
-    font-family: 'fontawesome';
+.comment-author .fn a:before {
+    font-family: "fontawesome";
     content: "\f007";
     margin-right: 5px;
     color: #222;
+}
+
+.comments-area .comment-meta .edit-link a:hover:before, .comment-author .fn a:hover:before {
+    color: #4169E1;
 }
 
 .comment-awaiting-moderation {
