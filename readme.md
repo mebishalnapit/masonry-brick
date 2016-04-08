@@ -3,18 +3,18 @@
 
 ## COPYRIGHT AND LICENSE
 #### External resources linked to the theme.
-* Roboto by Christian Robertson https://www.google.com/fonts/specimen/Roboto
+* Roboto by Christian Robertson https://www.google.com/fonts/specimen/Roboto  
   Apache License, version 2.0
-* Lobster by Pablo Impallari https://www.google.com/fonts/specimen/Lobster
+* Lobster by Pablo Impallari https://www.google.com/fonts/specimen/Lobster  
   SIL Open Font License, 1.1
 
 #### Resources packed within the theme.
-* Images in the screenshot is from http://pixabay.com/. License: CC0 Public Domain
-    Links: https://pixabay.com/en/winter-wonderland-red-snow-cold-1082511/
-           https://pixabay.com/en/mountain-view-panorama-person-984277/
-           https://pixabay.com/en/photographer-tourist-snapshot-407068/
-           https://pixabay.com/en/work-typing-computer-notebook-731198/
-* Font Awesome by Dave Gandy http://fortawesome.github.io/Font-Awesome/
+* Images in the screenshot is from http://pixabay.com/. License: CC0 Public Domain  
+    Links: https://pixabay.com/en/winter-wonderland-red-snow-cold-1082511/  
+           https://pixabay.com/en/mountain-view-panorama-person-984277/  
+           https://pixabay.com/en/photographer-tourist-snapshot-407068/  
+           https://pixabay.com/en/work-typing-computer-notebook-731198/  
+* Font Awesome by Dave Gandy http://fortawesome.github.io/Font-Awesome/  
   SIL OFL 1.1 http://scripts.sil.org/OFL.
 * HTML5 Shiv by Alexander Farkas, Jonathan Neal | MIT/GPL2 Licensed
 * FitVids by Chris Coyier and Paravel | WTFPL Licensed
