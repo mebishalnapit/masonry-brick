@@ -20,6 +20,7 @@ function masonry_brick_jetpack_setup() {
         'container' => 'main',
         'render' => 'masonry_brick_infinite_scroll_render',
         'footer' => 'page',
+        'wrapper' => false,
     ));
 
     // Add theme support for Responsive Videos.
