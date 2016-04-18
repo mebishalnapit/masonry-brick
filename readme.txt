@@ -40,6 +40,8 @@ If you've translated this theme into your native language, then, feel free to se
 * Added MB: Tabbed Widget
 * Screenshot Changed
 * Inline CSS and JavaScript codes removed
+* Featured image size has been changed
+* Theme prefix removed from the enqueued third party scripts
 
 = VERSION 0.1 =
 * Initial release
