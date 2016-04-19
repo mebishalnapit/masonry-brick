@@ -49,6 +49,7 @@ jQuery(document).ready(function () {
             prevText: '<span class="slide-prev"><i class="fa fa-angle-left"></i></span>',
             onSliderLoad: function () {
                 jQuery(".gallery-slider").css("visibility", "visible");
+                jQuery(".gallery-slider").css("height", "auto");
             }
         });
     }

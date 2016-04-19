@@ -1895,6 +1895,7 @@ li.comments-tab-widget p {
 --------------------------------------------------------------*/
 .gallery-slider {
     visibility: hidden;
+    height: 0;
 }
 
 .format-gallery .bx-wrapper {
