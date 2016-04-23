@@ -81,25 +81,6 @@ function masonry_brick_customize_register($wp_customize) {
         'settings' => 'masonry_brick_header_text'
     ));
 
-    $wp_customize->add_section('masonry_brick_header_top_bar_activate_setting', array(
-        'priority' => 2,
-        'title' => esc_html__('Activate Header Top Bar', 'masonry-brick'),
-        'panel' => 'masonry_brick_header_options'
-    ));
-
-    $wp_customize->add_setting('masonry_brick_header_top_bar_activate', array(
-        'default' => 0,
-        'capability' => 'edit_theme_options',
-        'sanitize_callback' => 'masonry_brick_checkbox_sanitize'
-    ));
-
-    $wp_customize->add_control('masonry_brick_header_top_bar_activate', array(
-        'type' => 'checkbox',
-        'label' => esc_html__('Check to activate the header top bar area. It includes the small info text area and social menu.', 'masonry-brick'),
-        'section' => 'masonry_brick_header_top_bar_activate_setting',
-        'settings' => 'masonry_brick_header_top_bar_activate'
-    ));
-
     // random posts in menu enable/disable
     $wp_customize->add_section('masonry_brick_random_post_in_menu_section', array(
         'priority' => 3,

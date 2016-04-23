@@ -25,7 +25,7 @@
             <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'masonry-brick'); ?></a>
 
             <header id="masthead" class="site-header" role="banner">
-                <?php if (get_theme_mod('masonry_brick_header_top_bar_activate', 0) == 1) : ?>
+                <?php if ((get_theme_mod('masonry_brick_header_text') != '') || (has_nav_menu('social'))) : ?>
                     <div class="header-top-bar clear">
                         <div class="inner-wrap">
                             <?php if (get_theme_mod('masonry_brick_header_text') != '') : ?>
@@ -72,11 +72,13 @@
                             </a>
                         <?php } ?>
 
-                        <?php if (get_theme_mod('masonry_brick_random_post_in_menu', 0) == 1) {
+                        <?php
+                        if (get_theme_mod('masonry_brick_random_post_in_menu', 0) == 1) {
                             echo '<div class="random-post">';
                             masonry_brick_random_post();
                             echo '</div>';
-                        } ?>
+                        }
+                        ?>
 
                         <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Menu', 'masonry-brick'); ?></button>
                         <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>

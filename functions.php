@@ -303,10 +303,10 @@ function masonry_brick_scripts() {
     wp_enqueue_style('masonry-brick-style', get_stylesheet_uri());
 
     // enqueueing the fontawesome icons
-    wp_enqueue_style('fontawesome', get_template_directory_uri() . '/fontawesome/css/font-awesome' . $suffix . '.css');
+    wp_enqueue_style('font-awesome', get_template_directory_uri() . '/fontawesome/css/font-awesome' . $suffix . '.css');
 
     // enqueueing the fitvids javascript file
-    wp_enqueue_script('fitvidsjs', get_template_directory_uri() . '/js/fitvids/jquery.fitvids' . $suffix . '.js', array('jquery'), false, true);
+    wp_enqueue_script('jquery-fitvids', get_template_directory_uri() . '/js/fitvids/jquery.fitvids' . $suffix . '.js', array('jquery'), false, true);
 
     wp_enqueue_script('masonry-brick-navigation', get_template_directory_uri() . '/js/navigation' . $suffix . '.js', array(), '20151215', true);
 
@@ -319,12 +319,12 @@ function masonry_brick_scripts() {
 
     // enqueueing the bxslider script
     if (has_post_format('gallery') || is_home() || is_search() || is_archive()) {
-        wp_enqueue_script('bxslider', get_template_directory_uri() . '/js/jquery.bxslider/jquery.bxslider' . $suffix . '.js', array('jquery'), null, true);
+        wp_enqueue_script('jquery-bxslider', get_template_directory_uri() . '/js/jquery.bxslider/jquery.bxslider' . $suffix . '.js', array('jquery'), null, true);
     }
 
     // enqueueing magnific popup
     if ((get_theme_mod('masonry_brick_featured_image_popup', 0) == 1) && has_post_format('image') && has_post_thumbnail()) {
-        wp_enqueue_script('magnific-popup', get_template_directory_uri() . '/js/magnific-popup/jquery.magnific-popup' . $suffix . '.js', array('jquery'), null, true);
+        wp_enqueue_script('jquery-magnific-popup', get_template_directory_uri() . '/js/magnific-popup/jquery.magnific-popup' . $suffix . '.js', array('jquery'), null, true);
         wp_enqueue_style('magnific-popup', get_template_directory_uri() . '/js/magnific-popup/magnific-popup' . $suffix . '.css');
     }
 

@@ -42,6 +42,7 @@ If you've translated this theme into your native language, then, feel free to se
 * Inline CSS and JavaScript codes removed
 * Featured image size has been changed
 * Theme prefix removed from the enqueued third party scripts
+* Header top bar activate option removed
 
 = VERSION 0.1 =
 * Initial release
