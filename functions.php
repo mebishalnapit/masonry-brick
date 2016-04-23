@@ -343,22 +343,6 @@ function masonry_brick_scripts() {
 add_action('wp_enqueue_scripts', 'masonry_brick_scripts');
 
 /**
- * Enqueue scripts in the admin areas
- */
-function masonry_brick_admin_scripts() {
-    global $post_type;
-    // adding the function to load the minified version if SCRIPT_DEFUG is disable
-    $suffix = ( defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ) ? '' : '.min';
-
-    // Meta box toggle js script
-    if ($post_type == 'post') {
-        wp_enqueue_script('masonry-brick-meta-toggle', get_template_directory_uri() . '/js/metabox-toggle' . $suffix . '.js', false, false, true);
-    }
-}
-
-+add_action('admin_enqueue_scripts', 'masonry_brick_admin_scripts');
-
-/**
  * Enqueue scripts and styles in the customizer
  */
 function masonry_brick_customizer_scripts() {
