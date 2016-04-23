@@ -9,6 +9,15 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('masonry-content'); ?>>
     <?php do_action('masonry_brick_before_post_content'); ?>
 
+    <div class="status-details">
+        <div class="status-user-avatar">
+            <?php echo masonry_brick_status_post_format_avatar_image(); ?>
+        </div>
+        <div class="status-user-text">
+            <?php echo masonry_brick_status_post_format_first_paragraph(); ?>
+        </div>
+    </div>
+
     <div class="post-wrapper">
         <header class="entry-header">
             <?php

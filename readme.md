@@ -43,6 +43,7 @@ If you've translated this theme into your native language, then, feel free to se
 * Featured image size has been changed
 * Theme prefix removed from the enqueued third party scripts
 * Header top bar activate option removed
+* Post format meta box removed and supporter it by calling first elements in the content as for example the first link for link post format
 
 #### VERSION 0.1
 * Initial release

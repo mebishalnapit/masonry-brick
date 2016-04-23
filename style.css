@@ -1934,6 +1934,11 @@ li.comments-tab-widget p {
     height: auto;
 }
 
+.format-video .fitvids-video p, .format-audio .audio-url p, .format-status .status-user-text p, .format-quote .quote-details blockquote p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
 .format-status .status-details {
     background-color: #4169E1;
     padding: 20px;
@@ -1954,6 +1959,10 @@ li.comments-tab-widget p {
     font-style: italic;
     font-size: 18px;
     color: #fff;
+}
+
+.format-chat .entry-content {
+    display: none;
 }
 
 .format-link .link-details {

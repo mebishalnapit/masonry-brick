@@ -75,7 +75,7 @@
                         <?php
                         if (get_theme_mod('masonry_brick_random_post_in_menu', 0) == 1) {
                             echo '<div class="random-post">';
-                            masonry_brick_random_post();
+                            echo masonry_brick_random_post();
                             echo '</div>';
                         }
                         ?>

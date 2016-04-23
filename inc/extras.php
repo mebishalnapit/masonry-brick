@@ -88,6 +88,7 @@ endif;
 if (!function_exists('masonry_brick_random_post')) :
 
     function masonry_brick_random_post() {
+
         $get_random_post = new WP_Query(array(
             'posts_per_page' => 1,
             'post_type' => 'post',
@@ -96,7 +97,7 @@ if (!function_exists('masonry_brick_random_post')) :
         ));
         ?>
         <?php while ($get_random_post->have_posts()):$get_random_post->the_post(); ?>
-            <a href="<?php the_permalink(); ?>" title="<?php esc_html_e( 'Random Post', 'masonry-brick' ); ?>"><i class="fa fa-random"></i></a>
+            <?php return '<a href="' . esc_url(get_the_permalink()) . '" title="' . esc_html__('Random Post', 'masonry-brick') . '"><i class="fa fa-random"></i></a>'; ?>
         <?php endwhile; ?>
         <?php
         // Reset Post Data
@@ -127,6 +128,7 @@ if (!function_exists('masonry_brick_footer_copyright')) :
 endif;
 
 add_filter('body_class', 'masonry_brick_body_class');
+
 /**
  * Filter the body_class
  *
@@ -343,6 +345,102 @@ if (!function_exists('masonry_brick_author_bio_links')) :
             }
             echo '</div>';
         }
+    }
+
+endif;
+
+// link post format support added
+if (!function_exists('masonry_brick_link_post_format')) :
+
+    function masonry_brick_link_post_format() {
+        if (!preg_match('/<a\s[^>]*?href=[\'"](.+?)[\'"]/is', get_the_content(), $matches))
+            return false;
+
+        return esc_url_raw($matches[1]);
+    }
+
+endif;
+
+// audio and video post format support added
+if (!function_exists('masonry_brick_audio_video_post_format')) :
+
+    function masonry_brick_audio_video_post_format() {
+        $document = new DOMDocument();
+        $content = apply_filters('the_content', get_the_content('', true));
+        if ('' != $content) {
+            libxml_use_internal_errors(true);
+            $document->loadHTML($content);
+            libxml_clear_errors();
+            $iframes = $document->getElementsByTagName('iframe');
+            $objects = $document->getElementsByTagName('object');
+            $embeds = $document->getElementsByTagName('embed');
+            $document = new DOMDocument();
+            if ($iframes->length) {
+                $iframe = $iframes->item($iframes->length - 1);
+                $document->appendChild($document->importNode($iframe, true));
+            } elseif ($objects->length) {
+                $object = $objects->item($objects->length - 1);
+                $document->appendChild($document->importNode($object, true));
+            } elseif ($embeds->length) {
+                $embed = $embeds->item($embeds->length - 1);
+                $document->appendChild($document->importNode($embed, true));
+            }
+            return wpautop($document->saveHTML());
+        }
+        return false;
+    }
+
+endif;
+
+// status post format support added
+if (!function_exists('masonry_brick_status_post_format_first_paragraph')) :
+
+    function masonry_brick_status_post_format_first_paragraph() {
+        $first_paragraph_str = wpautop(get_the_content());
+        $first_paragraph_str = substr($first_paragraph_str, 0, strpos($first_paragraph_str, '</p>') + 4);
+        $first_paragraph_str = strip_tags($first_paragraph_str, '<a><strong><em>');
+        return '<p>' . $first_paragraph_str . '</p>';
+    }
+
+endif;
+
+if (!function_exists('masonry_brick_status_post_format_avatar_image')) :
+
+    function masonry_brick_status_post_format_avatar_image() {
+        return get_avatar(get_the_author_meta('user_email'), '75');
+    }
+
+endif;
+
+// quote post format support added
+if (!function_exists('masonry_brick_quote_post_format_blockquote')) :
+
+    function masonry_brick_quote_post_format_blockquote() {
+
+        $document = new DOMDocument();
+        $content = apply_filters('the_content', get_the_content('', true));
+        $output = '';
+        if ('' != $content) {
+            libxml_use_internal_errors(true);
+            $document->loadHTML(mb_convert_encoding($content, 'html-entities', 'utf-8'));
+            libxml_clear_errors();
+            $blockquotes = $document->getElementsByTagName('blockquote');
+            if (!empty($blockquotes)) {
+                $blockquote = $blockquotes->item(0);
+                $document = new DOMDocument();
+                $document->appendChild($document->importNode($blockquote, true));
+                $output .= $document->saveHTML();
+            }
+        }
+        return wpautop($output);
+    }
+
+endif;
+
+if (!function_exists('masonry_brick_quote_post_format_cite')) :
+
+    function masonry_brick_quote_post_format_cite() {
+        return get_the_author();
     }
 
 endif;

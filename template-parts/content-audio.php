@@ -9,6 +9,10 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('masonry-content'); ?>>
     <?php do_action('masonry_brick_before_post_content'); ?>
 
+    <div class="audio-url">
+        <?php echo masonry_brick_audio_video_post_format(); ?>
+    </div>
+
     <div class="post-wrapper">
         <header class="entry-header">
             <?php

@@ -9,6 +9,10 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('masonry-content'); ?>>
     <?php do_action('masonry_brick_before_post_content'); ?>
 
+    <div class="chat-details">
+        <?php the_content(); ?>
+    </div>
+
     <div class="post-wrapper">
         <header class="entry-header">
             <?php
