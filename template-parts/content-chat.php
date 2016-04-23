@@ -9,13 +9,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('masonry-content'); ?>>
     <?php do_action('masonry_brick_before_post_content'); ?>
 
-    <?php $chat_post_text = get_post_meta($post->ID, 'masonry_brick_chat_text', true); ?>
-    <?php if (!empty($chat_post_text)) : ?>
-        <div class="chat-details">
-            <?php echo wpautop(esc_textarea($chat_post_text)); ?>
-        </div>
-    <?php endif; ?>
-
     <div class="post-wrapper">
         <header class="entry-header">
             <?php

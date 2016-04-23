@@ -9,16 +9,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('masonry-content'); ?>>
     <?php do_action('masonry_brick_before_post_content'); ?>
 
-    <?php $audio_post_url = get_post_meta($post->ID, 'masonry_brick_audio_url', true); ?>
-    <?php if (!empty($audio_post_url)) : ?>
-        <div class="audio-url">
-            <?php
-            $embed_code = wp_oembed_get($audio_post_url);
-            echo $embed_code;
-            ?>
-        </div>
-    <?php endif; ?>
-
     <div class="post-wrapper">
         <header class="entry-header">
             <?php

@@ -9,16 +9,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('masonry-content'); ?>>
     <?php do_action('masonry_brick_before_post_content'); ?>
 
-    <?php $video_post_url = get_post_meta($post->ID, 'masonry_brick_video_url', true); ?>
-    <?php if (!empty($video_post_url)) : ?>
-        <div class="fitvids-video">
-            <?php
-            $embed_code = wp_oembed_get($video_post_url);
-            echo $embed_code;
-            ?>
-        </div>
-    <?php endif; ?>
-
     <div class="post-wrapper">
         <header class="entry-header">
             <?php

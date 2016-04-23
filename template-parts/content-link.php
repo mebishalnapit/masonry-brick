@@ -9,14 +9,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('masonry-content'); ?>>
     <?php do_action('masonry_brick_before_post_content'); ?>
 
-    <?php $link_post_text = get_post_meta($post->ID, 'masonry_brick_link_text', true); ?>
-    <?php $link_post_url = get_post_meta($post->ID, 'masonry_brick_link_url', true); ?>
-    <?php if (!empty($link_post_text && $link_post_url)) : ?>
-        <div class="link-details">
-            <a href="<?php echo esc_url($link_post_url); ?>"><?php echo esc_html($link_post_text); ?></a>
-        </div>
-    <?php endif; ?>
-
     <div class="post-wrapper">
         <header class="entry-header">
             <?php
