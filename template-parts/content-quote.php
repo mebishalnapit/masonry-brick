@@ -11,7 +11,6 @@
 
     <div class="quote-details">
         <?php echo masonry_brick_quote_post_format_blockquote(); ?>
-        <cite><?php echo masonry_brick_quote_post_format_cite(); ?></cite>
     </div>
 
     <div class="post-wrapper">

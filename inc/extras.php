@@ -425,7 +425,7 @@ if (!function_exists('masonry_brick_quote_post_format_blockquote')) :
             $document->loadHTML(mb_convert_encoding($content, 'html-entities', 'utf-8'));
             libxml_clear_errors();
             $blockquotes = $document->getElementsByTagName('blockquote');
-            if (!empty($blockquotes)) {
+            if ($blockquotes->length) {
                 $blockquote = $blockquotes->item(0);
                 $document = new DOMDocument();
                 $document->appendChild($document->importNode($blockquote, true));
@@ -433,14 +433,6 @@ if (!function_exists('masonry_brick_quote_post_format_blockquote')) :
             }
         }
         return wpautop($output);
-    }
-
-endif;
-
-if (!function_exists('masonry_brick_quote_post_format_cite')) :
-
-    function masonry_brick_quote_post_format_cite() {
-        return get_the_author();
     }
 
 endif;

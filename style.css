@@ -774,6 +774,10 @@ blockquote cite {
     font-size: 18px;
 }
 
+blockquote cite a:hover {
+    color: #fff;
+}
+
 blockquote cite:before {
     font-family: "fontawesome";
     content: "\f068";

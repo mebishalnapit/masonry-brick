@@ -45,6 +45,7 @@ If you've translated this theme into your native language, then, feel free to se
 * Header top bar activate option removed
 * Post format meta box removed and supporter it by calling first elements in the content as for example the first link for link post format
 * Removed metabox toggle script for post format support
+* Default cite removed of user for quote post format
 
 #### VERSION 0.1
 * Initial release
