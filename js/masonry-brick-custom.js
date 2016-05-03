@@ -4,12 +4,12 @@
 jQuery(document).ready(function () {
 
     // search toggle
-    jQuery(".search-top").click(function () {
-        jQuery("#masthead .search-form-top").slideToggle('500');
+    jQuery('.search-top').click(function () {
+        jQuery('#masthead .search-form-top').slideToggle('500');
     });
 
     // scroll up function
-    jQuery("#scroll-up").hide();
+    jQuery('#scroll-up').hide();
     jQuery(function () {
         jQuery(window).scroll(function () {
             if (jQuery(this).scrollTop() > 1000) {
@@ -27,12 +27,12 @@ jQuery(document).ready(function () {
     });
 
     // tabbed widget tabs panel
-    jQuery(".masonry-brick-tabs a").click(function (event) {
+    jQuery('.masonry-brick-tabs a').click(function (event) {
         event.preventDefault();
-        jQuery(this).parent().addClass("active");
-        jQuery(this).parent().siblings().removeClass("active");
-        var tab = jQuery(this).attr("href");
-        jQuery(".tabs-panel").not(tab).css("display", "none");
+        jQuery(this).parent().addClass('active');
+        jQuery(this).parent().siblings().removeClass('active');
+        var tab = jQuery(this).attr('href');
+        jQuery('.tabs-panel').not(tab).css('display', 'none');
         jQuery(tab).fadeIn();
     });
 
@@ -48,8 +48,8 @@ jQuery(document).ready(function () {
             nextText: '<span class="slide-next"><i class="fa fa-angle-right"></i></span>',
             prevText: '<span class="slide-prev"><i class="fa fa-angle-left"></i></span>',
             onSliderLoad: function () {
-                jQuery(".gallery-slider").css("visibility", "visible");
-                jQuery(".gallery-slider").css("height", "auto");
+                jQuery('.gallery-slider').css('visibility', 'visible');
+                jQuery('.gallery-slider').css('height', 'auto');
             }
         });
     }
@@ -61,7 +61,7 @@ jQuery(document).ready(function () {
 
     // Setting for the responsive video using fitvids
     if (typeof jQuery.fn.fitVids !== 'undefined') {
-        jQuery(".fitvids-video").fitVids();
+        jQuery('.fitvids-video').fitVids();
     }
 
 });
