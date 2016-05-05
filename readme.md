@@ -37,6 +37,7 @@ If you've translated this theme into your native language, then, feel free to se
 ## CHANGELOG
 #### VERSION 0.3
 * Magnific Popup updated to version 1.1.0
+* Theme important links added in customizer options
 
 #### VERSION 0.2
 * Added MB: Random Posts Widget

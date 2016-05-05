@@ -17,3 +17,18 @@ input[type=checkbox]:before {
     content: '';
     margin: -3px 0 0 -4px;
 }
+li.customize-control-masonry-brick-important-links p {
+    text-align: center;
+    padding: 10px;
+    background-color: #4169E1;
+}
+li.customize-control-masonry-brick-important-links a {
+    color: #fff;
+}
+#accordion-section-masonry_brick_important_links_section h3.accordion-section-title, #accordion-section-masonry_brick_important_links_section h3.accordion-section-title:hover {
+    background-color: #4169E1 !important;
+    color: #fff !important;
+}
+#accordion-section-masonry_brick_important_links_section h3.accordion-section-title:after {
+    color: #fff !important;
+}

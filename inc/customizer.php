@@ -15,19 +15,40 @@ function masonry_brick_customize_register($wp_customize) {
     $wp_customize->get_setting('blogdescription')->transport = 'postMessage';
     $wp_customize->get_setting('header_textcolor')->transport = 'postMessage';
 
-    // extending Customizer Class to add the donation link
-    class Masonry_Brick_Donate_Link extends WP_Customize_Control {
+    // extending Customizer Class to add the theme important links
+    class Masonry_Brick_Important_Links extends WP_Customize_Control {
 
-        public $type = "masonry-brick-donate-link";
+        public $type = "masonry-brick-important-links";
 
         public function render_content() {
+            $important_links = array(
+                'theme-info' => array(
+                    'link' => esc_url('http://napitwptech.com/themes/masonry-brick/'),
+                    'text' => esc_html__('View Theme Info', 'masonry-brick'),
+                ),
+                'documentation' => array(
+                    'link' => esc_url('http://napitwptech.com/themes/masonry-brick/masonry-brick-wordpress-theme-documentation/'),
+                    'text' => esc_html__('Theme Documentation', 'masonry-brick'),
+                ),
+                'demo' => array(
+                    'link' => esc_url('http://demo.napitwptech.com/masonry-brick/'),
+                    'text' => esc_html__('View Theme Demo', 'masonry-brick'),
+                ),
+                'rating' => array(
+                    'link' => esc_url('http://wordpress.org/support/view/theme-reviews/masonry-brick'),
+                    'text' => esc_html__('Rate This Theme', 'masonry-brick'),
+                ),
+            );
+            foreach ($important_links as $important_link) {
+                echo '<p><a target="_blank" href="' . esc_url($important_link['link']) . '" >' . esc_attr($important_link['text']) . ' </a></p>';
+            }
             ?>
             <div style="text-align: center;background-color: #fff;padding: 10px;">
                 <strong><?php esc_attr_e('If you like our work. Buy us a beer.', 'masonry-brick'); ?></strong>
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
                     <input type="hidden" name="cmd" value="_s-xclick">
                     <input type="hidden" name="hosted_button_id" value="3NT8RH73FFM3L">
-                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="<?php esc_html_e('PayPal - The safer, easier way to pay online!', 'masonry-brick'); ?>">
                     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                 </form>
             </div>
@@ -36,22 +57,22 @@ function masonry_brick_customize_register($wp_customize) {
 
     }
 
-    // adding section for donation link
-    $wp_customize->add_section('masonry_brick_donate_section', array(
-        'priority' => 1000,
-        'title' => esc_html__('Donate Now', 'masonry-brick'),
+    // adding section for the theme important links
+    $wp_customize->add_section('masonry_brick_important_links_section', array(
+        'priority' => 1,
+        'title' => esc_html__('Theme Important Links', 'masonry-brick'),
     ));
 
-    // adding setting for donation link
-    $wp_customize->add_setting('masonry_brick_donate', array(
+    // adding setting for the theme important links
+    $wp_customize->add_setting('masonry_brick_important_links', array(
         'capability' => 'edit_theme_options',
-        'sanitize_callback' => 'masonry_brick_donate_sanitize'
+        'sanitize_callback' => 'masonry_brick_important_links_sanitize'
     ));
 
-    // adding control for donation link
-    $wp_customize->add_control(new Masonry_Brick_Donate_Link($wp_customize, 'masonry_brick_donate', array(
-        'section' => 'masonry_brick_donate_section',
-        'setting' => 'masonry_brick_donate'
+    // adding control for the theme important links
+    $wp_customize->add_control(new Masonry_Brick_Important_Links($wp_customize, 'masonry_brick_important_links', array(
+        'section' => 'masonry_brick_important_links_section',
+        'setting' => 'masonry_brick_important_links'
     )));
 
     // Start of the Header Options
@@ -368,7 +389,7 @@ function masonry_brick_customize_register($wp_customize) {
     }
 
     // link sanitization
-    function masonry_brick_donate_sanitize() {
+    function masonry_brick_important_links_sanitize() {
         return false;
     }
 
