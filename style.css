@@ -321,7 +321,7 @@ figure {
 
 .no-sidebar-content-centered #primary {
     float: none;
-    margin: 5% auto;
+    margin: 0 auto;
 }
 
 .masonry-content {
