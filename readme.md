@@ -38,6 +38,7 @@ If you've translated this theme into your native language, then, feel free to se
 #### VERSION 0.3
 * Magnific Popup updated to version 1.1.0
 * Theme important links added in customizer options
+* Font Awesome icons updated to version 4.6.2
 
 #### VERSION 0.2
 * Added MB: Random Posts Widget
