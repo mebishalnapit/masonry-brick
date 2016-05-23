@@ -17,7 +17,7 @@ get_header();
     </header><!-- .page-header -->
 </div>
 
-<section id="primary" class="content-area main-contents">
+<div id="primary" class="content-area main-contents">
     <main id="main" class="site-main" role="main">
 
         <?php if (have_posts()) : ?>
@@ -43,7 +43,7 @@ get_header();
         ?>
 
     </main><!-- #main -->
-</section><!-- #primary -->
+</div><!-- #primary -->
 
 <?php the_posts_pagination( array( 'mid_size' => 5 ) ); ?>
 

@@ -1864,6 +1864,11 @@ li.comments-tab-widget p {
     margin-top: 10px;
 }
 
+.search-no-results .not-found {
+    background: #fff;
+    padding: 20px;
+}
+
 @media screen and (max-width: 768px) {
     .entry-title, .page-title {
         font-size: 26px;
