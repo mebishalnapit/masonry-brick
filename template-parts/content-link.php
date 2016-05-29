@@ -10,7 +10,7 @@
     <?php do_action('masonry_brick_before_post_content'); ?>
 
     <div class="link-details">
-        <a href="<?php echo masonry_brick_link_post_format(); ?>" target="_blank"><?php echo esc_html('Link', 'creative-blog'); ?></a>
+        <a href="<?php echo masonry_brick_link_post_format(); ?>" target="_blank"><?php echo esc_html__('Link', 'masonry-brick'); ?></a>
     </div>
 
     <div class="post-wrapper">

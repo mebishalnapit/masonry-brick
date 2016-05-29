@@ -24,12 +24,15 @@ Resources packed within the theme.
 
 All other resources and theme elements are licensed under the [GNU GPL](http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
-Masonic Brick WordPress Theme, Copyright 2016 Bishal Napit
-Masonic Brick is distributed under the terms of the GNU GPL
+Masonry Brick WordPress Theme, Copyright 2016 Bishal Napit
+Masonry Brick is distributed under the terms of the GNU GPL
 
 == THEME USAGE ==
 = Theme Features Usage =
 All the available options of this theme can be used from Appearance > Customize.
+
+= Page Template =
+In this theme, we have added the Contact Page template so that you can make your contact page sidebar to be unique without using the plugins for this feature.
 
 == TRANSLATIONS ==
 If you've translated this theme into your native language, then, feel free to send the translation file to mebishalnapit@gmail.com and we will include it within the theme from next version update.

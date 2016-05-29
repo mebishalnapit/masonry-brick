@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Masonry Brick\n"
-"POT-Creation-Date: 2016-05-05 21:25+0545\n"
-"PO-Revision-Date: 2016-05-05 21:26+0545\n"
+"POT-Creation-Date: 2016-05-29 17:00+0545\n"
+"PO-Revision-Date: 2016-05-29 17:00+0545\n"
 "Last-Translator: \n"
 "Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
 "Language: en\n"
@@ -516,6 +516,10 @@ msgstr ""
 #: template-parts/content-status.php:48 template-parts/content-video.php:43
 #: template-parts/content.php:57
 msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-link.php:13
+msgid "Link"
 msgstr ""
 
 #: template-parts/content-none.php:13
