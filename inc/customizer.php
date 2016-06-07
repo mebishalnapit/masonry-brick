@@ -34,6 +34,10 @@ function masonry_brick_customize_register($wp_customize) {
                     'link' => esc_url('http://demo.napitwptech.com/masonry-brick/'),
                     'text' => esc_html__('View Theme Demo', 'masonry-brick'),
                 ),
+                'support' => array(
+                    'link' => esc_url('http://napitwptech.com/contact-us/'),
+                    'text' => esc_html__('Theme Support', 'masonry-brick'),
+                ),
                 'rating' => array(
                     'link' => esc_url('http://wordpress.org/support/view/theme-reviews/masonry-brick'),
                     'text' => esc_html__('Rate This Theme', 'masonry-brick'),
@@ -142,7 +146,6 @@ function masonry_brick_customize_register($wp_customize) {
         'settings' => 'masonry_brick_search_icon_in_menu'
     ));
     // End of the Header Options
-
     // Start Of Design Options
     $wp_customize->add_panel('masonry_brick_design_options', array(
         'capabitity' => 'edit_theme_options',
@@ -281,7 +284,6 @@ function masonry_brick_customize_register($wp_customize) {
         'settings' => 'masonry_brick_custom_css'
     ));
     // End Of Design Options
-
     // Start of Additional Options
     $wp_customize->add_panel('masonry_brick_additional_options', array(
         'capability' => 'edit_theme_options',
@@ -366,8 +368,8 @@ function masonry_brick_customize_register($wp_customize) {
         'section' => 'masonry_brick_author_bio_social_links_setting',
         'settings' => 'masonry_brick_author_bio_social_links'
     ));
-    // End of Additional Options
 
+    // End of Additional Options
     // sanitization works
     // radio/select buttons sanitization
     function masonry_brick_radio_select_sanitize($input, $setting) {
