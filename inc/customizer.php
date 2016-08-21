@@ -34,9 +34,13 @@ function masonry_brick_customize_register($wp_customize) {
                     'link' => esc_url('http://demo.napitwptech.com/masonry-brick/'),
                     'text' => esc_html__('View Theme Demo', 'masonry-brick'),
                 ),
-                'support' => array(
+                'contact' => array(
                     'link' => esc_url('http://napitwptech.com/contact-us/'),
-                    'text' => esc_html__('Theme Support', 'masonry-brick'),
+                    'text' => esc_html__('Contact Us', 'masonry-brick'),
+                ),
+                'forum' => array(
+                    'link' => esc_url('http://support.napitwptech.com/forums/forum/masonry-brick/'),
+                    'text' => esc_html__('Support Forum', 'masonry-brick'),
                 ),
                 'rating' => array(
                     'link' => esc_url('http://wordpress.org/support/view/theme-reviews/masonry-brick'),

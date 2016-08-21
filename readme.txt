@@ -40,6 +40,7 @@ If you would like to contribute to the translations of this theme to your native
 == CHANGELOG ==
 = VERSION 0.4 =
 * Change in featured image size for the related posts feature
+* Theme support forum link added in customizer options
 
 = VERSION 0.3 =
 * Magnific Popup updated to version 1.1.0
