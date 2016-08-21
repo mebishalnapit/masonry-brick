@@ -19,7 +19,7 @@
                     <?php if (has_post_thumbnail()): ?>
                         <div class="related-posts-thumbnail">
                             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-                                <?php the_post_thumbnail('masonry-brick-featured-thumbnail'); ?>
+                                <?php the_post_thumbnail('masonry-brick-related-posts-thumbnail'); ?>
                             </a>
                         </div>
                     <?php endif; ?>

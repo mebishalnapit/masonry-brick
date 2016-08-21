@@ -115,9 +115,9 @@ if (!function_exists('masonry_brick_footer_copyright')) :
     function masonry_brick_footer_copyright() {
         $site_link = '<a href="' . esc_url(home_url('/')) . '" title="' . esc_attr(get_bloginfo('name', 'display')) . '" ><span>' . get_bloginfo('name', 'display') . '</span></a>';
 
-        $wp_link = '<a href="http://wordpress.org" target="_blank" title="' . esc_attr__('WordPress', 'masonry-brick') . '"><span>' . esc_html__('WordPress', 'masonry-brick') . '</span></a>';
+        $wp_link = '<a href="' . esc_url('http://wordpress.org') . '" target="_blank" title="' . esc_attr__('WordPress', 'masonry-brick') . '"><span>' . esc_html__('WordPress', 'masonry-brick') . '</span></a>';
 
-        $my_link_name = '<a href="http://napitwptech.com" target="_blank" title="' . esc_attr__('Bishal Napit', 'masonry-brick') . '"><span>' . esc_html__('Bishal Napit', 'masonry-brick') . '</span></a>';
+        $my_link_name = '<a href="' . esc_url('http://napitwptech.com') . '" target="_blank" title="' . esc_attr__('Bishal Napit', 'masonry-brick') . '"><span>' . esc_html__('Bishal Napit', 'masonry-brick') . '</span></a>';
 
         $default_footer_value = sprintf(esc_html__('Copyright &copy; %1$s %2$s.', 'masonry-brick'), date('Y'), $site_link) . ' ' . sprintf(esc_html__('Theme: %1$s by %2$s.', 'masonry-brick'), esc_html__('Masonry Brick', 'masonry-brick'), $my_link_name) . ' ' . sprintf(esc_html__('Powered by %s.', 'masonry-brick'), $wp_link);
 

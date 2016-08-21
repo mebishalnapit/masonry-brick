@@ -38,6 +38,9 @@ All the available options of this theme can be used from Appearance > Customize.
 If you would like to contribute to the translations of this theme to your native language, then, you can visit this link: https://translate.wordpress.org/projects/wp-themes/masonry-brick/ and then contribute to the translation.
 
 ## CHANGELOG
+#### VERSION 0.4
+* Change in featured image size for the related posts feature
+
 #### VERSION 0.3
 * Magnific Popup updated to version 1.1.0
 * Theme important links added in customizer options

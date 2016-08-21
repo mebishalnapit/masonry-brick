@@ -44,6 +44,7 @@ if (!function_exists('masonry_brick_setup')) :
         add_theme_support('post-thumbnails');
         add_image_size('masonry-brick-featured-thumbnail', 600, 450, true);
         add_image_size('masonry-brick-featured-full', 760, 570, true);
+        add_image_size('masonry-brick-related-posts-thumbnail', 400, 300, true);
         add_image_size('masonry-brick-featured-small-thumbnail', 120, 90, true);
 
         // This theme uses wp_nav_menu() in one location.
