@@ -1,5 +1,5 @@
 # MASONRY BRICK
-**Masonry Brick**, as its name suggest is a WordPress theme based on the masonry layout which is suitable to display your contents in beautiful way. Some of the features of this theme are as it supports WordPress default custom header and custom background, which can be kept as requirement. Also, this theme features custom social menu and also you have the ability to choose the layout option for each of the different pages/posts individually. This theme also supports all 10 post formats so that you can show the contents uniquely according to the post formats used in your site. You can see the demo of this theme through this link: http://demo.napitwptech.com/masonry-brick.
+**Masonry Brick**, as its name suggest is a WordPress theme based on the masonry layout which is suitable to display your contents in beautiful way. Some of the features of this theme are as it supports WordPress default custom header and custom background, which can be kept as requirement. Also, this theme features custom social menu and also you have the ability to choose the layout option for each of the different pages/posts individually. This theme also supports all 10 post formats so that you can show the contents uniquely according to the post formats used in your site. You can see the demo of this theme through this link: http://demo.napitwptech.com/masonry-brick and get free theme support from this link: http://support.napitwptech.com/forums/forum/masonry-brick/.
 
 ## COPYRIGHT AND LICENSE
 #### External resources linked to the theme.
@@ -41,6 +41,7 @@ If you would like to contribute to the translations of this theme to your native
 #### VERSION 0.4
 * Change in featured image size for the related posts feature
 * Theme support forum link added in customizer options
+* Checkbox option in Customizer properly sanitized
 
 #### VERSION 0.3
 * Magnific Popup updated to version 1.1.0

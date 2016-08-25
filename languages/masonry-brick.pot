@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Masonry Brick\n"
-"POT-Creation-Date: 2016-08-21 11:01+0545\n"
-"PO-Revision-Date: 2016-08-21 11:01+0545\n"
+"POT-Creation-Date: 2016-08-25 19:32+0545\n"
+"PO-Revision-Date: 2016-08-25 19:33+0545\n"
 "Last-Translator: \n"
 "Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
 "Language: en\n"
@@ -168,140 +168,132 @@ msgstr ""
 msgid "Rate This Theme"
 msgstr ""
 
-#: inc/customizer.php:55
-msgid "If you like our work. Buy us a beer."
-msgstr ""
-
-#: inc/customizer.php:59
-msgid "PayPal - The safer, easier way to pay online!"
-msgstr ""
-
-#: inc/customizer.php:71
+#: inc/customizer.php:60
 msgid "Theme Important Links"
 msgstr ""
 
-#: inc/customizer.php:89
+#: inc/customizer.php:78
 msgid ""
 "Change the Header Settings from here as you want to best suit your need."
 msgstr ""
 
-#: inc/customizer.php:91
+#: inc/customizer.php:80
 msgid "Header Options"
 msgstr ""
 
-#: inc/customizer.php:96
+#: inc/customizer.php:85
 msgid "Small Info Text"
 msgstr ""
 
-#: inc/customizer.php:108
+#: inc/customizer.php:97
 msgid ""
 "Write your custom text to display it in the header top bar. It also accepts "
 "the shortcodes too."
 msgstr ""
 
-#: inc/customizer.php:116 inc/extras.php:100
+#: inc/customizer.php:105 inc/extras.php:100
 msgid "Random Post"
 msgstr ""
 
-#: inc/customizer.php:128
+#: inc/customizer.php:117
 msgid "Check to display the random post icon in the primary menu."
 msgstr ""
 
-#: inc/customizer.php:136
+#: inc/customizer.php:125
 msgid "Search Icon"
 msgstr ""
 
-#: inc/customizer.php:148
+#: inc/customizer.php:137
 msgid "Check to display the search icon in the primary menu."
 msgstr ""
 
-#: inc/customizer.php:156
+#: inc/customizer.php:145
 msgid ""
 "Change the Design Settings from here as you want to best suit your need."
 msgstr ""
 
-#: inc/customizer.php:158
+#: inc/customizer.php:147
 msgid "Design Options"
 msgstr ""
 
-#: inc/customizer.php:164
+#: inc/customizer.php:153
 msgid "Site Layout"
 msgstr ""
 
-#: inc/customizer.php:176
+#: inc/customizer.php:165
 msgid "Choose your site layout. The change is reflected in the whole site."
 msgstr ""
 
-#: inc/customizer.php:178
+#: inc/customizer.php:167
 msgid "Boxed Layout"
 msgstr ""
 
-#: inc/customizer.php:179
+#: inc/customizer.php:168
 msgid "Wide Layout"
 msgstr ""
 
-#: inc/customizer.php:221
+#: inc/customizer.php:210
 msgid "Default layout for pages"
 msgstr ""
 
-#: inc/customizer.php:233
+#: inc/customizer.php:222
 msgid ""
 "Select default layout for pages. This layout will be reflected in all pages "
 "unless unique layout is set for the specific page."
 msgstr ""
 
-#: inc/customizer.php:247
+#: inc/customizer.php:236
 msgid "Default layout for single posts"
 msgstr ""
 
-#: inc/customizer.php:259
+#: inc/customizer.php:248
 msgid ""
 "Select default layout for single posts. This layout will be reflected in all "
 "single posts unless unique layout is set for the specific post."
 msgstr ""
 
-#: inc/customizer.php:273
+#: inc/customizer.php:262
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:286
+#: inc/customizer.php:275
 msgid "Write your custom css and design live."
 msgstr ""
 
-#: inc/customizer.php:294
+#: inc/customizer.php:283
 msgid ""
 "Change the Additional Settings from here as you want to best suite your site."
 msgstr ""
 
-#: inc/customizer.php:296
+#: inc/customizer.php:285
 msgid "Additional Options"
 msgstr ""
 
-#: inc/customizer.php:302
+#: inc/customizer.php:291
 msgid "Related Posts"
 msgstr ""
 
-#: inc/customizer.php:314
+#: inc/customizer.php:303
 msgid "Check to activate the related posts."
 msgstr ""
 
-#: inc/customizer.php:327
+#: inc/customizer.php:316
 msgid "Related Posts To Be Shown As:"
 msgstr ""
 
-#: inc/customizer.php:331
+#: inc/customizer.php:320
 msgid "Related Posts By Categories"
 msgstr ""
 
-#: inc/customizer.php:332
+#: inc/customizer.php:321
 msgid "Related Posts By Tags"
 msgstr ""
 
-#: inc/customizer.php:339
+#: inc/customizer.php:328
 msgid "Image Lightbox"
 msgstr ""
 
-#: inc/customizer.php:351
+#: inc/customizer.php:340
 msgid ""
 "Check to enable the lightbox feature for the featured images in single post "
 "page. Note: the post should be of image post format to support this feature, "
@@ -309,11 +301,11 @@ msgid ""
 "post format is choosen."
 msgstr ""
 
-#: inc/customizer.php:359
+#: inc/customizer.php:348
 msgid "Social Links In Author Bio"
 msgstr ""
 
-#: inc/customizer.php:371
+#: inc/customizer.php:360
 msgid ""
 "Check to enable the social links in the Author Bio section. For this to "
 "work, you need to add the URL of your social sites in the profile section. "
