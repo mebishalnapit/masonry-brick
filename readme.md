@@ -40,6 +40,7 @@ If you would like to contribute to the translations of this theme to your native
 ## CHANGELOG
 #### VERSION 0.5
 * Footer credit link has been updated
+* Font Awesome icons updated to version 4.7.0
 
 #### VERSION 0.4
 * Change in featured image size for the related posts feature
