@@ -3,18 +3,18 @@
 
 ## COPYRIGHT AND LICENSE
 #### External resources linked to the theme.
-* Roboto by Christian Robertson https://www.google.com/fonts/specimen/Roboto  
+* Roboto by Christian Robertson https://www.google.com/fonts/specimen/Roboto
   Apache License, version 2.0
-* Lobster by Pablo Impallari https://www.google.com/fonts/specimen/Lobster  
+* Lobster by Pablo Impallari https://www.google.com/fonts/specimen/Lobster
   SIL Open Font License, 1.1
 
 #### Resources packed within the theme.
-* Images in the screenshot is from http://pixabay.com/. License: CC0 Public Domain  
-    Links: https://pixabay.com/en/winter-wonderland-red-snow-cold-1082511/  
-           https://pixabay.com/en/mountain-view-panorama-person-984277/  
-           https://pixabay.com/en/photographer-tourist-snapshot-407068/  
-           https://pixabay.com/en/work-typing-computer-notebook-731198/  
-* Font Awesome by Dave Gandy http://fortawesome.github.io/Font-Awesome/  
+* Images in the screenshot is from http://pixabay.com/. License: CC0 Public Domain
+    Links: https://pixabay.com/en/winter-wonderland-red-snow-cold-1082511/
+           https://pixabay.com/en/mountain-view-panorama-person-984277/
+           https://pixabay.com/en/photographer-tourist-snapshot-407068/
+           https://pixabay.com/en/work-typing-computer-notebook-731198/
+* Font Awesome by Dave Gandy http://fortawesome.github.io/Font-Awesome/
   SIL OFL 1.1 http://scripts.sil.org/OFL.
 * HTML5 Shiv by Alexander Farkas, Jonathan Neal | MIT/GPL2 Licensed
 * FitVids by Chris Coyier and Paravel | WTFPL Licensed
@@ -24,7 +24,7 @@
 
 All other resources and theme elements are licensed under the [GNU GPL](http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
-Masonry Brick WordPress Theme, Copyright 2016 Bishal Napit  
+Masonry Brick WordPress Theme, Copyright 2016 Bishal Napit
 Masonry Brick is distributed under the terms of the GNU GPL
 
 ## THEME USAGE
@@ -38,6 +38,9 @@ All the available options of this theme can be used from Appearance > Customize.
 If you would like to contribute to the translations of this theme to your native language, then, you can visit this link: https://translate.wordpress.org/projects/wp-themes/masonry-brick/ and then contribute to the translation.
 
 ## CHANGELOG
+#### VERSION 0.6
+* Migrated the Custom CSS code added in theme options to Additional CSS section introduced in WordPress 4.7
+
 #### VERSION 0.5
 * Footer credit link has been updated
 * Font Awesome icons updated to version 4.7.0
