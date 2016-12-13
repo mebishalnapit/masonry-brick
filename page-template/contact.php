@@ -10,23 +10,23 @@ get_header();
 <?php do_action('masonry_brick_before_body_content'); ?>
 
 <div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
+	<main id="main" class="site-main" role="main">
 
-        <?php
-        while (have_posts()) : the_post();
+		<?php
+		while (have_posts()) : the_post();
 
-            get_template_part('template-parts/content', 'page');
+			get_template_part('template-parts/content', 'page');
 
-            do_action('masonry_brick_before_comments_template');
-            // If comments are open or we have at least one comment, load up the comment template.
-            if (comments_open() || get_comments_number()) :
-                comments_template();
-            endif;
+			do_action('masonry_brick_before_comments_template');
+			// If comments are open or we have at least one comment, load up the comment template.
+			if (comments_open() || get_comments_number()) :
+				comments_template();
+			endif;
 
-        endwhile; // End of the loop.
-        ?>
+		endwhile; // End of the loop.
+		?>
 
-    </main><!-- #main -->
+	</main><!-- #main -->
 </div><!-- #primary -->
 
 <?php masonry_brick_sidebar_select(); ?>
