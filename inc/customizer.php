@@ -23,27 +23,27 @@ function masonry_brick_customize_register($wp_customize) {
 		public function render_content() {
 			$important_links = array(
 				'theme-info' => array(
-					'link' => esc_url('http://napitwptech.com/themes/masonry-brick/'),
+					'link' => esc_url('https://napitwptech.com/themes/masonry-brick/'),
 					'text' => esc_html__('View Theme Info', 'masonry-brick'),
 				),
 				'documentation' => array(
-					'link' => esc_url('http://napitwptech.com/themes/masonry-brick/masonry-brick-wordpress-theme-documentation/'),
+					'link' => esc_url('https://napitwptech.com/themes/masonry-brick/masonry-brick-wordpress-theme-documentation/'),
 					'text' => esc_html__('Theme Documentation', 'masonry-brick'),
 				),
 				'demo' => array(
-					'link' => esc_url('http://demo.napitwptech.com/masonry-brick/'),
+					'link' => esc_url('https://demo.napitwptech.com/masonry-brick/'),
 					'text' => esc_html__('View Theme Demo', 'masonry-brick'),
 				),
 				'contact' => array(
-					'link' => esc_url('http://napitwptech.com/contact-us/'),
+					'link' => esc_url('https://napitwptech.com/contact-us/'),
 					'text' => esc_html__('Contact Us', 'masonry-brick'),
 				),
 				'forum' => array(
-					'link' => esc_url('http://support.napitwptech.com/forums/forum/masonry-brick/'),
+					'link' => esc_url('https://support.napitwptech.com/forums/forum/masonry-brick/'),
 					'text' => esc_html__('Support Forum', 'masonry-brick'),
 				),
 				'rating' => array(
-					'link' => esc_url('http://wordpress.org/support/view/theme-reviews/masonry-brick'),
+					'link' => esc_url('https://wordpress.org/support/theme/masonry-brick/reviews/'),
 					'text' => esc_html__('Rate This Theme', 'masonry-brick'),
 				),
 			);
