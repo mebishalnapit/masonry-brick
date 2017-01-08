@@ -64,6 +64,13 @@ jQuery(document).ready(function () {
 		jQuery('.fitvids-video').fitVids();
 	}
 
+	// setting for sticky sidebar and content area
+	if ((typeof jQuery.fn.theiaStickySidebar !== 'undefined') && (typeof ResizeSensor !== 'undefined')) {
+		jQuery('#primary, #secondary').theiaStickySidebar({
+			additionalMarginTop: 40
+		});
+	}
+
 });
 
 // setting for masonry layout

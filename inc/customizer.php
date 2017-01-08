@@ -364,7 +364,27 @@ function masonry_brick_customize_register($wp_customize) {
 		'settings' => 'masonry_brick_author_bio_social_links'
 	));
 
+	// Sticky Sidebar and Content area
+	$wp_customize->add_section('masonry_brick_sticky_sidebar_content_setting', array(
+		'priority' => 3,
+		'title' => esc_html__('Sticky Sidebar And Content Area', 'masonry-brick'),
+		'panel' => 'masonry_brick_additional_options'
+	));
+
+	$wp_customize->add_setting('masonry_brick_sticky_sidebar_content', array(
+		'default' => 0,
+		'capability' => 'edit_theme_options',
+		'sanitize_callback' => 'masonry_brick_checkbox_sanitize'
+	));
+
+	$wp_customize->add_control('masonry_brick_sticky_sidebar_content', array(
+		'type' => 'checkbox',
+		'label' => esc_html__('Check to enable the feature of sticky sidebar and content area.', 'masonry-brick'),
+		'section' => 'masonry_brick_sticky_sidebar_content_setting',
+		'settings' => 'masonry_brick_sticky_sidebar_content'
+	));
 	// End of Additional Options
+
 	// sanitization works
 	// radio/select buttons sanitization
 	function masonry_brick_radio_select_sanitize($input, $setting) {
