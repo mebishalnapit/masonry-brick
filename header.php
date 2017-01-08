@@ -91,14 +91,12 @@
 
 			<div id="content" class="site-content">
 				<div class="inner-wrap">
-					<?php if (!is_front_page()) : ?>
+					<?php if (!is_front_page() && function_exists('bcn_display')) : ?>
 						<div class="breadcrumbs-area">
 							<?php if (function_exists('bcn_display')) { ?>
 								<div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
 									<?php bcn_display(); ?>
 								</div>
-							<?php } elseif (function_exists('yoast_breadcrumb')) {
-								yoast_breadcrumb('<div class="breadcrumbs">','</div>');
-							} ?>
+							<?php } ?>
 						</div>
 					<?php endif; ?>
