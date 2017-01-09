@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Masonry Brick\n"
-"POT-Creation-Date: 2016-08-25 19:32+0545\n"
-"PO-Revision-Date: 2016-08-25 19:33+0545\n"
+"POT-Creation-Date: 2017-01-09 20:28+0545\n"
+"PO-Revision-Date: 2017-01-09 20:29+0545\n"
 "Last-Translator: \n"
 "Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
 "Language: en\n"
@@ -252,48 +252,48 @@ msgid ""
 "single posts unless unique layout is set for the specific post."
 msgstr ""
 
-#: inc/customizer.php:262
+#: inc/customizer.php:263
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:275
+#: inc/customizer.php:276
 msgid "Write your custom css and design live."
 msgstr ""
 
-#: inc/customizer.php:283
+#: inc/customizer.php:285
 msgid ""
 "Change the Additional Settings from here as you want to best suite your site."
 msgstr ""
 
-#: inc/customizer.php:285
+#: inc/customizer.php:287
 msgid "Additional Options"
 msgstr ""
 
-#: inc/customizer.php:291
+#: inc/customizer.php:293
 msgid "Related Posts"
 msgstr ""
 
-#: inc/customizer.php:303
+#: inc/customizer.php:305
 msgid "Check to activate the related posts."
 msgstr ""
 
-#: inc/customizer.php:316
+#: inc/customizer.php:318
 msgid "Related Posts To Be Shown As:"
 msgstr ""
 
-#: inc/customizer.php:320
+#: inc/customizer.php:322
 msgid "Related Posts By Categories"
 msgstr ""
 
-#: inc/customizer.php:321
+#: inc/customizer.php:323
 msgid "Related Posts By Tags"
 msgstr ""
 
-#: inc/customizer.php:328
+#: inc/customizer.php:330
 msgid "Image Lightbox"
 msgstr ""
 
-#: inc/customizer.php:340
+#: inc/customizer.php:342
 msgid ""
 "Check to enable the lightbox feature for the featured images in single post "
 "page. Note: the post should be of image post format to support this feature, "
@@ -301,16 +301,24 @@ msgid ""
 "post format is choosen."
 msgstr ""
 
-#: inc/customizer.php:348
+#: inc/customizer.php:350
 msgid "Social Links In Author Bio"
 msgstr ""
 
-#: inc/customizer.php:360
+#: inc/customizer.php:362
 msgid ""
 "Check to enable the social links in the Author Bio section. For this to "
 "work, you need to add the URL of your social sites in the profile section. "
 "This theme supports WordPress SEO and All In One SEO Pack plugin for this "
 "feature."
+msgstr ""
+
+#: inc/customizer.php:370
+msgid "Sticky Sidebar And Content Area"
+msgstr ""
+
+#: inc/customizer.php:382
+msgid "Check to enable the feature of sticky sidebar and content area."
 msgstr ""
 
 #: inc/extras.php:118
