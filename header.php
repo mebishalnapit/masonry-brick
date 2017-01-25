@@ -93,10 +93,8 @@
 				<div class="inner-wrap">
 					<?php if (!is_front_page() && function_exists('bcn_display')) : ?>
 						<div class="breadcrumbs-area">
-							<?php if (function_exists('bcn_display')) { ?>
-								<div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
-									<?php bcn_display(); ?>
-								</div>
-							<?php } ?>
+							<div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+								<?php bcn_display(); ?>
+							</div>
 						</div>
 					<?php endif; ?>
