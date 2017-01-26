@@ -87,6 +87,9 @@ if (!function_exists('masonry_brick_setup')) :
 			'default-color' => 'eaeaea',
 			'default-image' => '',
 		)));
+
+		// Add theme support for WooCommerce plugin
+		add_theme_support('woocommerce');
 	}
 
 endif;

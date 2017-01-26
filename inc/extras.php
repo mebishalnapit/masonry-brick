@@ -455,3 +455,22 @@ function masonry_brick_custom_css_migrate() {
 }
 
 add_action('after_setup_theme', 'masonry_brick_custom_css_migrate');
+
+/**
+ * Make theme WooCommerce plugin compatible
+ */
+// Remove WooCommerce default wrapper
+remove_action('woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
+remove_action('woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+
+// Add theme wrapper for WooCommerce pages
+add_action('woocommerce_before_main_content', 'masonry_brick_wrapper_start', 10);
+add_action('woocommerce_after_main_content', 'masonry_brick_wrapper_end', 10);
+
+function masonry_brick_wrapper_start() {
+	echo '<div id="primary" class="content-area"><main id="main" class="site-main" role="main">';
+}
+
+function masonry_brick_wrapper_end() {
+	echo '</main></div>';
+}
