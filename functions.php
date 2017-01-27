@@ -317,7 +317,7 @@ function masonry_brick_scripts() {
 	wp_enqueue_script('masonry-brick-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix' . $suffix . '.js', array(), '20151215', true);
 
 	// enqueueing the masonry script
-	if (is_home() || is_search() || is_archive()) {
+	if ((is_home() || is_search() || is_archive()) && !(is_post_type_archive('product') || is_tax('product_cat') || is_tax('product_tag'))) {
 		wp_enqueue_script('jquery-masonry');
 	}
 
