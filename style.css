@@ -1524,7 +1524,7 @@ a:active {
 }
 
 /*--------------------------------------------------------------
-# Breadcrumbs CSS
+# Breadcrumb NavXT CSS
 --------------------------------------------------------------*/
 .breadcrumbs-area {
 	padding: 20px;
@@ -2323,7 +2323,7 @@ a#scroll-up:hover {
 /*--------------------------------------------------------------
 ## WooCommerce Plugin CSS
 --------------------------------------------------------------*/
-.woocommerce-page #main {
+.woocommerce-page #primary {
 	background: #fff;
 	padding: 20px;
 	margin: 0 0 40px;
