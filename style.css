@@ -938,7 +938,9 @@ table {
 	width: 100%;
 }
 
-tr, td, th {
+tr,
+td,
+th {
 	border: 2px solid #4169E1;
 	padding: 5px;
 	text-align: center;
@@ -1121,7 +1123,8 @@ a:active {
 	padding: 0;
 }
 
-.main-navigation li.menu-item-has-children > a:after, .main-navigation li.page_item_has_children > a:after {
+.main-navigation li.menu-item-has-children > a:after,
+.main-navigation li.page_item_has_children > a:after {
 	font-family: "fontawesome";
 	content: "\f107";
 	margin-left: 10px;
@@ -1240,7 +1243,8 @@ a:active {
 		left: 0;
 	}
 
-	.main-navigation li.menu-item-has-children > a:after, .main-navigation li.page_item_has_children > a:after {
+	.main-navigation li.menu-item-has-children > a:after,
+	.main-navigation li.page_item_has_children > a:after {
 		content: "";
 	}
 
@@ -1382,7 +1386,8 @@ a:active {
 	font-size: 16px;
 }
 
-.footer-menu ul, .footer-menu li {
+.footer-menu ul,
+.footer-menu li {
 	list-style: none;
 	margin: 0;
 }
@@ -1409,7 +1414,8 @@ a:active {
 }
 
 @media screen and (max-width: 768px) {
-	.footer-menu, .footer-copyright {
+	.footer-menu,
+	.footer-copyright {
 		float: none;
 		max-width: 100%;
 	}
@@ -1590,13 +1596,18 @@ footer .widget .widget-title span {
 	padding-left: 6px;
 }
 
-.widget_nav_menu a, .widget_pages a, .widget_recent_comments li, .widget_recent_entries li {
+.widget_nav_menu a, .widget_pages a,
+.widget_recent_comments li,
+.widget_recent_entries li {
 	border-bottom: 1px solid #fff;
 	display: block;
 	padding: 5px;
 }
 
-#secondary .widget_nav_menu a, #secondary .widget_pages a, #secondary .widget_recent_comments li, #secondary .widget_recent_entries li {
+#secondary .widget_nav_menu a,
+#secondary .widget_pages a,
+#secondary .widget_recent_comments li,
+#secondary .widget_recent_entries li {
 	border-bottom: 1px solid #222;
 }
 
@@ -1724,7 +1735,9 @@ ul.masonry-brick-tabs li {
 	padding: 6px;
 }
 
-.masonry-brick-tabs .popular .fa, .masonry-brick-tabs .recent .fa, .masonry-brick-tabs .comment .fa {
+.masonry-brick-tabs .popular .fa,
+.masonry-brick-tabs .recent .fa,
+.masonry-brick-tabs .comment .fa {
 	margin-right: 5px;
 }
 
@@ -1741,17 +1754,20 @@ ul.masonry-brick-tabs .active a {
 	color: #fff;
 }
 
-.recent-tab .single-article-content img, .popular-tab .single-article-content img {
+.recent-tab .single-article-content img,
+.popular-tab .single-article-content img {
 	float: left;
 	margin-right: 10px;
 }
 
-.recent-tab .single-article-content .entry-title, .popular-tab .single-article-content .entry-title {
+.recent-tab .single-article-content .entry-title,
+.popular-tab .single-article-content .entry-title {
 	font-size: 20px;
 	clear: none;
 }
 
-.recent-tab .single-article-content .entry-meta, .popular-tab .single-article-content  .entry-meta {
+.recent-tab .single-article-content .entry-meta,
+.popular-tab .single-article-content  .entry-meta {
 	font-size: 14px;
 }
 
@@ -1827,11 +1843,14 @@ li.comments-tab-widget p {
 	margin: 0 0 50px;
 }
 
-.entry-title, .page-title, .taxonomy-description {
+.entry-title,
+.page-title,
+.taxonomy-description {
 	font-family: Lobster, cursive;
 }
 
-.entry-title, .page-title {
+.entry-title,
+.page-title {
 	font-family: Lobster, cursive;
 	font-size: 28px;
 	margin: 0;
@@ -1851,21 +1870,31 @@ li.comments-tab-widget p {
 	display: inline-block;
 }
 
-.posted-on .fa-calendar, .byline .fa-user, .comments-link .fa-comment,
-.cat-links .fa-folder-open, .tags-links .fa-tags, .edit-link .fa-edit {
+.posted-on .fa-calendar,
+.byline .fa-user,
+.comments-link .fa-comment,
+.cat-links .fa-folder-open,
+.tags-links .fa-tags,
+.edit-link .fa-edit {
 	margin-right: 5px;
 }
 
-.entry-meta span.byline, .entry-meta span.comments-link {
+.entry-meta span.byline,
+.entry-meta span.comments-link {
 	margin-left: 10px;
 }
 
-.entry-meta, .cat-links, .tags-links, .edit-link {
+.entry-meta,
+.cat-links,
+.tags-links,
+.edit-link {
 	font-size: 16px;
 	font-family: Lobster, cursive;
 }
 
-.tags-links , .edit-link, .cat-links {
+.tags-links,
+.edit-link,
+.cat-links {
 	display: block;
 }
 
@@ -1879,11 +1908,15 @@ li.comments-tab-widget p {
 }
 
 @media screen and (max-width: 768px) {
-	.entry-title, .page-title {
+	.entry-title,
+	.page-title {
 		font-size: 26px;
 	}
 
-	.entry-meta, .cat-links, .tags-links, .edit-link {
+	.entry-meta,
+	.cat-links,
+	.tags-links,
+	.edit-link {
 		font-size: 14px;
 	}
 }
@@ -1897,7 +1930,9 @@ li.comments-tab-widget p {
 /*--------------------------------------------------------------
 ## GitHub Gist table
 --------------------------------------------------------------*/
-.gist tr, .gist td, .gist th {
+.gist tr,
+.gist td,
+.gist th {
 	border: none;
 }
 
@@ -1930,7 +1965,8 @@ li.comments-tab-widget p {
 	margin-right: 5px;
 }
 
-.format-gallery .slide-prev, .format-gallery .slide-next {
+.format-gallery .slide-prev,
+.format-gallery .slide-next {
 	font-size: 30px;
 	background-color: rgba(65,105,225,0.7);
 	color: #fff;
@@ -1938,7 +1974,8 @@ li.comments-tab-widget p {
 	border-radius: 5px;
 }
 
-.format-gallery .slide-prev:hover, .format-gallery .slide-next:hover {
+.format-gallery .slide-prev:hover,
+.format-gallery .slide-next:hover {
 	background-color: #4169E1;
 }
 
@@ -1952,7 +1989,10 @@ li.comments-tab-widget p {
 	height: auto;
 }
 
-.format-video .fitvids-video p, .format-audio .audio-url p, .format-status .status-user-text p, .format-quote .quote-details blockquote p {
+.format-video .fitvids-video p,
+.format-audio .audio-url p,
+.format-status .status-user-text p,
+.format-quote .quote-details blockquote p {
 	margin-bottom: 0;
 	margin-top: 0;
 }
@@ -1989,7 +2029,8 @@ li.comments-tab-widget p {
 	font-size: 20px;
 }
 
-.format-link .link-details a, .format-link .link-details a:hover {
+.format-link .link-details a,
+.format-link .link-details a:hover {
 	color: #fff;
 }
 
@@ -2062,7 +2103,9 @@ li.comments-tab-widget p {
 	display: inline;
 }
 
-.author-social-links, .author-box .author-description, .author-box .author-name {
+.author-social-links,
+.author-box .author-description,
+.author-box .author-name {
 	font-family: Lobster, cursive;
 }
 
@@ -2153,7 +2196,8 @@ li.comments-tab-widget p {
 	display: block;
 }
 
-.comment-respond input, .comment-respond textarea {
+.comment-respond input,
+.comment-respond textarea {
 	padding: 10px;
 }
 
@@ -2183,7 +2227,8 @@ li.comments-tab-widget p {
 	font-family: Lobster, cursive;
 }
 
-.comment-metadata, .comment-author {
+.comment-metadata,
+.comment-author {
 	font-family: Lobster, cursive;
 }
 
@@ -2244,7 +2289,8 @@ ol.children {
 	color: #222;
 }
 
-.comments-area .comment-meta .edit-link a:hover:before, .comment-author .fn a:hover:before {
+.comments-area .comment-meta .edit-link a:hover:before,
+.comment-author .fn a:hover:before {
 	color: #4169E1;
 }
 
@@ -2294,6 +2340,7 @@ a#scroll-up {
 	opacity: 0.5;
 	filter: alpha(opacity=50); /* For IE8 and earlier */
 }
+
 a#scroll-up i {
 	background-color: #222;
 	color: #4169E1;
@@ -2301,6 +2348,7 @@ a#scroll-up i {
 	padding: 8px;
 	border-radius: 5px;
 }
+
 a#scroll-up:hover {
 	opacity: 1;
 	filter: alpha(opacity=100); /* For IE8 and earlier */
@@ -2331,6 +2379,12 @@ a#scroll-up:hover {
 
 .archive.woocommerce-page #primary {
 	width: 100%;
+}
+
+.woocommerce-page tr,
+.woocommerce-page td,
+.woocommerce-page th {
+	border: 0;
 }
 
 /*--------------------------------------------------------------
