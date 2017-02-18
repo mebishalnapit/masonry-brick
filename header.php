@@ -58,13 +58,13 @@
 
 				<?php echo '</div>'; ?>
 
-				<?php if (get_theme_mod('masonry_brick_search_icon_in_menu', 0) == 1) { ?>
-					<div class="search-form-top clear">
-						<?php get_search_form(); ?>
-					</div>
-				<?php } ?>
-
 				<nav id="site-navigation" class="main-navigation clear" role="navigation">
+					<?php if (get_theme_mod('masonry_brick_search_icon_in_menu', 0) == 1) { ?>
+						<div class="search-form-top clear">
+							<?php get_search_form(); ?>
+						</div>
+					<?php } ?>
+
 					<div class="inner-wrap">
 						<?php if (get_theme_mod('masonry_brick_search_icon_in_menu', 0) == 1) { ?>
 							<a class="search-toggle">

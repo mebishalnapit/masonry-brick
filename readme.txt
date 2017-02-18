@@ -20,6 +20,7 @@ Resources packed within the theme.
 * FitVids by Chris Coyier and Paravel | WTFPL Licensed
 * Bxslider by Steven Wanderski | MIT license
 * Magnific Popup by Dmitry Semenov | MIT Licensed
+* Stickyjs by Anthony Garand | MIT Licensed
 * Theia Sticky Sidebar by WeCodePixels | MIT Licensed
 * ResizeSensor by Marc J. Schmidt | MIT Licensed
 * Other custom js files are our own creation and is licensed under the same license as this theme.
@@ -42,6 +43,7 @@ If you would like to contribute to the translations of this theme to your native
 == CHANGELOG ==
 = VERSION 0.9 =
 * BxSlider updated to version 4.2.7
+* Option added to make the primary menu sticky
 
 = VERSION 0.8 =
 * Theme is now WooCommerce plugin compatible

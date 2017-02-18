@@ -326,6 +326,11 @@ function masonry_brick_scripts() {
 		wp_enqueue_script('jquery-bxslider', get_template_directory_uri() . '/js/jquery.bxslider/jquery.bxslider' . $suffix . '.js', array('jquery'), null, true);
 	}
 
+	// enueueing sticky script
+	if (get_theme_mod('masonry_brick_sticky_menu', 0) == 1) {
+		wp_enqueue_script('jquery-sticky', get_template_directory_uri() . '/js/sticky/jquery.sticky' . $suffix . '.js', array('jquery'), false, true);
+	}
+
 	// enqueueing magnific popup
 	if ((get_theme_mod('masonry_brick_featured_image_popup', 0) == 1) && has_post_format('image') && has_post_thumbnail()) {
 		wp_enqueue_script('jquery-magnific-popup', get_template_directory_uri() . '/js/magnific-popup/jquery.magnific-popup' . $suffix . '.js', array('jquery'), null, true);

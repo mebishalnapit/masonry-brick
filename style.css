@@ -1196,6 +1196,10 @@ a:active {
 	cursor: pointer;
 }
 
+.sticky-wrapper .main-navigation {
+	z-index: 9999;
+}
+
 @media screen and (min-width: 768px) {
 	.menu-toggle {
 		display: none;
@@ -1251,6 +1255,14 @@ a:active {
 	.main-navigation li li.menu-item-has-children > a:after,
 	.main-navigation li li.page_item_has_children > a:after {
 		content: "";
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.sticky-wrapper .main-navigation #primary-menu {
+		max-height: 200px;
+		overflow: auto;
+		width: 100%;
 	}
 }
 

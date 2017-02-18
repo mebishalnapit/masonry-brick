@@ -138,6 +138,26 @@ function masonry_brick_customize_register($wp_customize) {
 		'section' => 'masonry_brick_search_icon_in_menu_section',
 		'settings' => 'masonry_brick_search_icon_in_menu'
 	));
+
+	// sticky menu enable/disable
+	$wp_customize->add_section('masonry_brick_sticky_menu_section', array(
+		'priority' => 4,
+		'title' => esc_html__('Sticky Menu', 'masonry-brick'),
+		'panel' => 'masonry_brick_header_options'
+	));
+
+	$wp_customize->add_setting('masonry_brick_sticky_menu', array(
+		'default' => 0,
+		'capability' => 'edit_theme_options',
+		'sanitize_callback' => 'masonry_brick_checkbox_sanitize'
+	));
+
+	$wp_customize->add_control('masonry_brick_sticky_menu', array(
+		'type' => 'checkbox',
+		'label' => esc_html__('Check to make the primary menu sticky.', 'masonry-brick'),
+		'section' => 'masonry_brick_sticky_menu_section',
+		'settings' => 'masonry_brick_sticky_menu'
+	));
 	// End of the Header Options
 	// Start Of Design Options
 	$wp_customize->add_panel('masonry_brick_design_options', array(
