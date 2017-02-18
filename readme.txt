@@ -40,6 +40,9 @@ Contact Page: In this theme, we have added the Contact Page template so that you
 If you would like to contribute to the translations of this theme to your native language, then, you can visit this link: https://translate.wordpress.org/projects/wp-themes/masonry-brick/ and then contribute to the translation.
 
 == CHANGELOG ==
+= VERSION 0.9 =
+* BxSlider updated to version 4.2.7
+
 = VERSION 0.8 =
 * Theme is now WooCommerce plugin compatible
 
