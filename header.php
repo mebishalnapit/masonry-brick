@@ -43,7 +43,12 @@
 				<?php endif; ?>
 
 				<?php if (get_header_image() && ('blank' == get_header_textcolor())) : ?>
-					<img src="<?php header_image(); ?>" width="<?php echo esc_attr(get_custom_header()->width); ?>" height="<?php echo esc_attr(get_custom_header()->height); ?>" alt="<?php echo get_bloginfo('name', 'display'); ?>" class="header-image">
+					<div class="masonry-brick-header-image">
+						<?php
+						// display the header image
+						the_header_image_tag();
+						?>
+					</div>
 				<?php endif; // End header image check. ?>
 
 				<?php
