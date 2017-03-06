@@ -42,6 +42,7 @@ If you would like to contribute to the translations of this theme to your native
 
 ## CHANGELOG
 #### VERSION 1.0
+* Remove use of deprecated constant HEADER_TEXTCOLOR
 
 #### VERSION 0.9
 * BxSlider updated to version 4.2.7

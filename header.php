@@ -43,7 +43,7 @@
 				<?php endif; ?>
 
 				<?php if (get_header_image() && ('blank' == get_header_textcolor())) : ?>
-					<div class="masonry-brick-header-image">
+					<div class="masonry-brick-header-image header-image">
 						<?php
 						// display the header image
 						the_header_image_tag();
