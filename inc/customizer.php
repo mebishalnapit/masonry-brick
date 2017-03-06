@@ -404,7 +404,22 @@ function masonry_brick_customize_register($wp_customize) {
 		'settings' => 'masonry_brick_sticky_sidebar_content'
 	));
 	// End of Additional Options
+	// Start of the WordPress default sections for theme related options
+	// primary color options
+	$wp_customize->add_setting('masonry_brick_primary_color', array(
+		'default' => '#4169E1',
+		'capability' => 'edit_theme_options',
+		'sanitize_callback' => 'masonry_brick_color_option_hex_sanitize',
+		'sanitize_js_callback' => 'masonry_brick_color_escaping_option_sanitize'
+	));
 
+	$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'masonry_brick_primary_color', array(
+		'label' => esc_html__('Primary Color', 'masonry-brick'),
+		'section' => 'colors',
+		'settings' => 'masonry_brick_primary_color'
+	)));
+
+	// End of the WordPress default sections for theme related options
 	// sanitization works
 	// radio/select buttons sanitization
 	function masonry_brick_radio_select_sanitize($input, $setting) {
@@ -419,6 +434,19 @@ function masonry_brick_customize_register($wp_customize) {
 	// checkbox sanitization
 	function masonry_brick_checkbox_sanitize($input) {
 		return (1 === absint($input)) ? 1 : 0;
+	}
+
+	// color sanitization
+	function masonry_brick_color_option_hex_sanitize($color) {
+		if ($unhashed = sanitize_hex_color_no_hash($color))
+			return '#' . $unhashed;
+
+		return $color;
+	}
+
+	function masonry_brick_color_escaping_option_sanitize($input) {
+		$input = esc_attr($input);
+		return $input;
 	}
 
 	// link sanitization

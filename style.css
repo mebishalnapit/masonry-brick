@@ -1102,6 +1102,10 @@ a:active {
 	font-size: 16px;
 }
 
+.main-navigation a:hover {
+	color: #fff;
+}
+
 .main-navigation ul ul {
 	float: left;
 	position: absolute;

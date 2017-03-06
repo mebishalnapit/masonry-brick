@@ -240,6 +240,20 @@ add_action('wp_head', 'masonry_brick_custom_css');
  * Hooks the Custom Internal CSS to head section
  */
 function masonry_brick_custom_css() {
+	// changing color options
+	$masonry_brick_custom_options_color = '';
+	$primary_color = esc_html(get_theme_mod('masonry_brick_primary_color', '#4169E1'));
+	if ($primary_color != '#4169E1') {
+		$masonry_brick_custom_options_color .= '.site-title-box{background:rgba(' . masonry_brick_hex2rgb($primary_color) . ')}.format-gallery .slide-next,.format-gallery .slide-prev{background-color:rgba(' . masonry_brick_hex2rgb($primary_color) . ')}.bypostauthor>.comment-body .fn:after,.comment-awaiting-moderation,.format-chat .chat-details,.format-gallery .slide-next:hover,.format-gallery .slide-prev:hover,.format-link .link-details,.format-status .status-details,.main-navigation .current-menu-ancestor>a,.main-navigation .current-menu-item>a,.main-navigation .current_page_ancestor>a,.main-navigation .current_page_item>a,.main-navigation li.focus>a,.main-navigation li:hover>a,.nav-links .page-numbers.current,.nav-links .page-numbers:hover,.quote-details,.site-branding,.sticky,blockquote{background-color:' . $primary_color . '}#menu-social li a:before,.comment-author .fn a:hover:before,.comments-area .comment-meta .edit-link a:hover:before,.footer-copyright a,.footer-sidebar-areas a:hover,.widget_archive li a:hover:before,.widget_categories li a:hover:before,.widget_nav_menu li a:hover:before,.widget_pages li a:hover:before,.widget_recent_comments li:hover:before,.widget_recent_entries li a:hover:before,.widget_rss li a:hover:before,a#scroll-up i,a:hover{color:' . $primary_color . '}td,th,tr{border:2px solid ' . $primary_color . '}button,input[type=button],input[type=reset],input[type=submit]{border:1px solid ' . $primary_color . ';background:' . $primary_color . '}.navigation.pagination .nav-links{border-top:2px solid ' . $primary_color . '}.footer-widgets,.site-info{border-top:4px solid ' . $primary_color . '}.comment-respond .form-submit input[type=submit]{background:' . $primary_color . '}.wp-caption{border:1px solid ' . $primary_color . '}@media screen and (max-width:768px){.social-menu,ul#footer-menu{border-top:1px solid ' . $primary_color . '}}';
+	}
+
+	// color change options code
+	if (!empty($masonry_brick_custom_options_color)) {
+		echo '<!-- ' . get_bloginfo('name') . ' Internal Styles -->';
+		?><style type="text/css"><?php echo strip_tags($masonry_brick_custom_options_color); ?></style>
+		<?php
+	}
+
 	// custom CSS codes goes here
 	$masonry_brick_custom_css = get_theme_mod('masonry_brick_custom_css', '');
 	if (!empty($masonry_brick_custom_css) && !function_exists('wp_update_custom_css_post')) {
@@ -433,6 +447,30 @@ if (!function_exists('masonry_brick_quote_post_format_blockquote')) :
 			}
 		}
 		return wpautop($output);
+	}
+
+endif;
+
+// function to display the rgb value of hex color code
+if (!function_exists('masonry_brick_hex2rgb')) :
+
+	function masonry_brick_hex2rgb($color) {
+		$color = trim($color, '#');
+
+		if (strlen($color) === 3) {
+			$r = hexdec(substr($color, 0, 1) . substr($color, 0, 1));
+			$g = hexdec(substr($color, 1, 1) . substr($color, 1, 1));
+			$b = hexdec(substr($color, 2, 1) . substr($color, 2, 1));
+		} else if (strlen($color) === 6) {
+			$r = hexdec(substr($color, 0, 2));
+			$g = hexdec(substr($color, 2, 2));
+			$b = hexdec(substr($color, 4, 2));
+		} else {
+			return array();
+		}
+
+		$rgb = array($r, $g, $b, 0.7);
+		return implode(',', $rgb); // returns the rgb values separated by commas
 	}
 
 endif;
