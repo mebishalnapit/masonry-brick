@@ -44,6 +44,7 @@ If you would like to contribute to the translations of this theme to your native
 = VERSION 1.0 =
 * Remove use of deprecated constant HEADER_TEXTCOLOR
 * Options added to change the theme primary color
+* Add support for WooCommerce 2.7's new gallery feature
 
 = VERSION 0.9 =
 * BxSlider updated to version 4.2.7

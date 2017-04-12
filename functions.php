@@ -90,6 +90,9 @@ if (!function_exists('masonry_brick_setup')) :
 
 		// Add theme support for WooCommerce plugin
 		add_theme_support('woocommerce');
+		add_theme_support('wc-product-gallery-zoom');
+		add_theme_support('wc-product-gallery-lightbox');
+		add_theme_support('wc-product-gallery-slider');
 	}
 
 endif;
@@ -338,7 +341,7 @@ function masonry_brick_scripts() {
 	}
 
 	// enqueueing sticky content and sidebar area required js files
-	if(get_theme_mod('masonry_brick_sticky_sidebar_content', 0) == 1) {
+	if (get_theme_mod('masonry_brick_sticky_sidebar_content', 0) == 1) {
 		wp_enqueue_script('ResizeSensor', get_template_directory_uri() . '/js/theia-sticky-sidebar/ResizeSensor' . $suffix . '.js', array('jquery'), false, true);
 		wp_enqueue_script('theia-sticky-sidebar', get_template_directory_uri() . '/js/theia-sticky-sidebar/theia-sticky-sidebar' . $suffix . '.js', array('jquery'), false, true);
 	}
