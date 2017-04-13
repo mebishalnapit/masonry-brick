@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Masonry Brick\n"
-"POT-Creation-Date: 2017-02-26 08:23+0545\n"
-"PO-Revision-Date: 2017-02-26 08:24+0545\n"
+"POT-Creation-Date: 2017-04-13 06:30+0545\n"
+"PO-Revision-Date: 2017-04-13 06:31+0545\n"
 "Last-Translator: \n"
 "Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
 "Language: en\n"
@@ -65,73 +65,73 @@ msgstr ""
 msgid "Footer Menu"
 msgstr ""
 
-#: functions.php:158 inc/meta-boxes.php:32
+#: functions.php:161 inc/meta-boxes.php:32
 msgid "Right Sidebar"
 msgstr ""
 
-#: functions.php:160
+#: functions.php:163
 msgid "Display your widgets in the Right Sidebar Area."
 msgstr ""
 
-#: functions.php:169 inc/meta-boxes.php:37
+#: functions.php:172 inc/meta-boxes.php:37
 msgid "Left Sidebar"
 msgstr ""
 
-#: functions.php:171
+#: functions.php:174
 msgid "Display your widgets in the Left Sidebar Area."
 msgstr ""
 
-#: functions.php:180
+#: functions.php:183
 msgid "404 Sidebar"
 msgstr ""
 
-#: functions.php:182
+#: functions.php:185
 msgid "Display your widgets in the 404 Error Page Sidebar Area."
 msgstr ""
 
-#: functions.php:191
+#: functions.php:194
 msgid "Contact Page Sidebar"
 msgstr ""
 
-#: functions.php:193
+#: functions.php:196
 msgid "Display your widgets in the Contact Page Sidebar Area."
 msgstr ""
 
-#: functions.php:202
+#: functions.php:205
 msgid "Footer Sidebar One"
 msgstr ""
 
-#: functions.php:204
+#: functions.php:207
 msgid "Display your widgets in the Footer Sidebar Area One."
 msgstr ""
 
-#: functions.php:213
+#: functions.php:216
 msgid "Footer Sidebar Two"
 msgstr ""
 
-#: functions.php:215
+#: functions.php:218
 msgid "Display your widgets in the Footer Sidebar Area Two."
 msgstr ""
 
-#: functions.php:224
+#: functions.php:227
 msgid "Footer Sidebar Three"
 msgstr ""
 
-#: functions.php:226
+#: functions.php:229
 msgid "Display your widgets in the Footer Sidebar Area Three."
 msgstr ""
 
-#: functions.php:257
+#: functions.php:260
 msgctxt "Roboto font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:265
+#: functions.php:268
 msgctxt "Lobster font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:273
+#: functions.php:276
 msgctxt "Add new subset ( cyrillic, greek, vietnamese )"
 msgid "no-subset"
 msgstr ""
@@ -140,7 +140,7 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:83
+#: header.php:88
 msgid "Menu"
 msgstr ""
 
@@ -329,6 +329,10 @@ msgstr ""
 msgid "Check to enable the feature of sticky sidebar and content area."
 msgstr ""
 
+#: inc/customizer.php:417
+msgid "Primary Color"
+msgstr ""
+
 #: inc/extras.php:118
 msgid "WordPress"
 msgstr ""
@@ -356,20 +360,20 @@ msgstr ""
 msgid "Powered by %s."
 msgstr ""
 
-#: inc/extras.php:336
+#: inc/extras.php:350
 #, php-format
 msgid "Follow %s on:"
 msgstr ""
 
-#: inc/extras.php:338
+#: inc/extras.php:352
 msgid "Facebook"
 msgstr ""
 
-#: inc/extras.php:341
+#: inc/extras.php:355
 msgid "Twitter"
 msgstr ""
 
-#: inc/extras.php:344
+#: inc/extras.php:358
 msgid "Google Plus"
 msgstr ""
 
