@@ -41,10 +41,13 @@ All the available options of this theme can be used from Appearance > Customize.
 If you would like to contribute to the translations of this theme to your native language, then, you can visit this link: https://translate.wordpress.org/projects/wp-themes/masonry-brick/ and then contribute to the translation.
 
 ## CHANGELOG
+#### VERSION TBD
+* Fix the display of hidden contents when the menu and content area both are sticky
+
 #### VERSION 1.0
 * Remove use of deprecated constant HEADER_TEXTCOLOR
 * Options added to change the theme primary color
-* Add support for WooCommerce 2.7's new gallery feature
+* Add support for WooCommerce 3.0's new gallery feature
 
 #### VERSION 0.9
 * BxSlider updated to version 4.2.7
