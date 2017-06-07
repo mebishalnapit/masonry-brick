@@ -2423,6 +2423,26 @@ object {
 }
 
 /*--------------------------------------------------------------
+# Header Video CSS
+--------------------------------------------------------------*/
+.wp-custom-header {
+	position: relative;
+}
+
+.wp-custom-header-video-button {
+	position: absolute;
+	left: 2%;
+	top: 85%;
+	max-width: 100%;
+	border: 1px solid #4169E1;
+	border-radius: 3px;
+	background: #4169E1;
+	font-size: 16px;
+	padding: 8px 15px;
+	color: #fff;
+}
+
+/*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
 .wp-caption {

@@ -42,11 +42,15 @@
 					</div>
 				<?php endif; ?>
 
-				<?php if (get_header_image() && ('blank' == get_header_textcolor())) : ?>
+				<?php if ((get_header_image() || function_exists('the_custom_header_markup')) && ('blank' == get_header_textcolor())) : ?>
 					<div class="masonry-brick-header-image header-image">
 						<?php
-						// display the header image
-						the_header_image_tag();
+						// Display the header video and header image
+						if (function_exists('the_custom_header_markup')) :
+							the_custom_header_markup();
+						else :
+							the_header_image_tag();
+						endif;
 						?>
 					</div>
 				<?php endif; // End header image check. ?>

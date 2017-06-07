@@ -18,7 +18,9 @@ function masonry_brick_custom_header_setup() {
 		'default-text-color' => 'fff',
 		'width' => 1400,
 		'height' => 400,
-		'flex-height' => false,
+		'video' => true,
+		'flex-width' => true,
+		'flex-height' => true,
 		'wp-head-callback' => 'masonry_brick_header_style',
 	)));
 }
