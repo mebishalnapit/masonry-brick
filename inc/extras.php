@@ -234,7 +234,7 @@ if (!function_exists('masonry_brick_sidebar_select')) :
 
 endif;
 
-add_action('wp_head', 'masonry_brick_custom_css');
+add_action('wp_head', 'masonry_brick_custom_css', 100);
 
 /**
  * Hooks the Custom Internal CSS to head section
