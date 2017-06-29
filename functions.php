@@ -88,6 +88,9 @@ if (!function_exists('masonry_brick_setup')) :
 			'default-image' => '',
 		)));
 
+		// Add theme support for selective refresh for widgets.
+		add_theme_support('customize-selective-refresh-widgets');
+
 		// Add theme support for WooCommerce plugin
 		add_theme_support('woocommerce');
 		add_theme_support('wc-product-gallery-zoom');
