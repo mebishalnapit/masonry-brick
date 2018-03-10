@@ -35,12 +35,15 @@ Masonry Brick is distributed under the terms of the GNU GPL
 All the available options of this theme can be used from Appearance > Customize.
 
 #### Page Template
-** Contact Page: ** In this theme, we have added the Contact Page template so that you can make your contact page sidebar to be unique without using the plugins for this feature.
+**Contact Page:** In this theme, we have added the Contact Page template so that you can make your contact page sidebar to be unique without using the plugins for this feature.
 
 ## TRANSLATIONS
 If you would like to contribute to the translations of this theme to your native language, then, you can visit this link: https://translate.wordpress.org/projects/wp-themes/masonry-brick/ and then contribute to the translation.
 
 ## CHANGELOG
+#### VERSION TBD
+* Add theme support for customizer selective refresh for theme bundled widgets
+
 #### VERSION 1.0.2
 * Change the priority for the theme Custom CSS wp_head hook
 * Add theme support for selective refresh for widgets
