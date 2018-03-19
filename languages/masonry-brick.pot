@@ -1,24 +1,27 @@
 # Copyright (C) 2016 Bishal Napit
 # This file is distributed under the GNU General Public License v3 or later.
+#, fuzzy
 msgid ""
 msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Masonry Brick\n"
-"POT-Creation-Date: 2017-04-13 06:30+0545\n"
-"PO-Revision-Date: 2017-04-13 06:31+0545\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2018-03-19 06:10+0545\n"
+"PO-Revision-Date: 2018-03-19 06:09+0545\n"
+"Last-Translator: Bishal Napit <mebishalnapit@gmail.com>\n"
 "Language-Team: Bishal Napit <mebishalnapit@gmail.com>\n"
-"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7\n"
+"X-Generator: Poedit 2.0.3\n"
 "X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #: 404.php:20 404.php:28
 msgid "404 Error!"
@@ -65,73 +68,73 @@ msgstr ""
 msgid "Footer Menu"
 msgstr ""
 
-#: functions.php:161 inc/meta-boxes.php:32
+#: functions.php:164 inc/meta-boxes.php:32
 msgid "Right Sidebar"
 msgstr ""
 
-#: functions.php:163
+#: functions.php:166
 msgid "Display your widgets in the Right Sidebar Area."
 msgstr ""
 
-#: functions.php:172 inc/meta-boxes.php:37
+#: functions.php:175 inc/meta-boxes.php:37
 msgid "Left Sidebar"
 msgstr ""
 
-#: functions.php:174
+#: functions.php:177
 msgid "Display your widgets in the Left Sidebar Area."
 msgstr ""
 
-#: functions.php:183
+#: functions.php:186
 msgid "404 Sidebar"
 msgstr ""
 
-#: functions.php:185
+#: functions.php:188
 msgid "Display your widgets in the 404 Error Page Sidebar Area."
 msgstr ""
 
-#: functions.php:194
+#: functions.php:197
 msgid "Contact Page Sidebar"
 msgstr ""
 
-#: functions.php:196
+#: functions.php:199
 msgid "Display your widgets in the Contact Page Sidebar Area."
 msgstr ""
 
-#: functions.php:205
+#: functions.php:208
 msgid "Footer Sidebar One"
 msgstr ""
 
-#: functions.php:207
+#: functions.php:210
 msgid "Display your widgets in the Footer Sidebar Area One."
 msgstr ""
 
-#: functions.php:216
+#: functions.php:219
 msgid "Footer Sidebar Two"
 msgstr ""
 
-#: functions.php:218
+#: functions.php:221
 msgid "Display your widgets in the Footer Sidebar Area Two."
 msgstr ""
 
-#: functions.php:227
+#: functions.php:230
 msgid "Footer Sidebar Three"
 msgstr ""
 
-#: functions.php:229
+#: functions.php:232
 msgid "Display your widgets in the Footer Sidebar Area Three."
 msgstr ""
 
-#: functions.php:260
+#: functions.php:263
 msgctxt "Roboto font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:268
+#: functions.php:271
 msgctxt "Lobster font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:276
+#: functions.php:279
 msgctxt "Add new subset ( cyrillic, greek, vietnamese )"
 msgid "no-subset"
 msgstr ""
@@ -140,7 +143,7 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:88
+#: header.php:92
 msgid "Menu"
 msgstr ""
 
@@ -337,6 +340,7 @@ msgstr ""
 msgid "WordPress"
 msgstr ""
 
+#. Author of the plugin/theme
 #: inc/extras.php:120
 msgid "Bishal Napit"
 msgstr ""
@@ -351,6 +355,7 @@ msgstr ""
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
+#. Theme Name of the plugin/theme
 #: inc/extras.php:122
 msgid "Masonry Brick"
 msgstr ""
@@ -360,20 +365,20 @@ msgstr ""
 msgid "Powered by %s."
 msgstr ""
 
-#: inc/extras.php:350
+#: inc/extras.php:340
 #, php-format
 msgid "Follow %s on:"
 msgstr ""
 
-#: inc/extras.php:352
+#: inc/extras.php:342
 msgid "Facebook"
 msgstr ""
 
-#: inc/extras.php:355
+#: inc/extras.php:345
 msgid "Twitter"
 msgstr ""
 
-#: inc/extras.php:358
+#: inc/extras.php:348
 msgid "Google Plus"
 msgstr ""
 
@@ -446,48 +451,48 @@ msgstr ""
 msgid "MB: Random Posts Widget"
 msgstr ""
 
-#: inc/widgets.php:13
+#: inc/widgets.php:14
 msgid "Displays the random posts from your site."
 msgstr ""
 
-#: inc/widgets.php:22
+#: inc/widgets.php:25
 msgid "Title:"
 msgstr ""
 
-#: inc/widgets.php:26
+#: inc/widgets.php:29
 msgid "Number of random posts to display:"
 msgstr ""
 
-#: inc/widgets.php:98
+#: inc/widgets.php:101
 msgid "MB: Tabbed Widget"
 msgstr ""
 
-#: inc/widgets.php:99
+#: inc/widgets.php:103
 msgid ""
 "Displays the popular posts, recent posts and the recent comments in the tabs."
 msgstr ""
 
-#: inc/widgets.php:107
+#: inc/widgets.php:113
 msgid "Number of popular posts, recent posts and comments to display:"
 msgstr ""
 
-#: inc/widgets.php:128
+#: inc/widgets.php:135
 msgid "Popular"
 msgstr ""
 
-#: inc/widgets.php:129
+#: inc/widgets.php:138
 msgid "Recent"
 msgstr ""
 
-#: inc/widgets.php:130
+#: inc/widgets.php:141
 msgid "Comment"
 msgstr ""
 
-#: inc/widgets.php:208
+#: inc/widgets.php:220
 msgid "says:"
 msgstr ""
 
-#: inc/widgets.php:212
+#: inc/widgets.php:224
 msgid "No Comments"
 msgstr ""
 
@@ -573,4 +578,27 @@ msgstr ""
 #. translators: %s: Name of current post.
 #: template-parts/content.php:49
 msgid "Read More <i class=\"fa fa-arrow-circle-o-right\"></i>"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://napitwptech.com/themes/masonry-brick/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Masonry Brick, as its name suggest is a WordPress theme based on the masonry "
+"layout which is suitable to display your contents in beautiful way. Some of "
+"the features of this theme are as it supports WordPress default custom "
+"header and custom background, which can be kept as requirement. Also, this "
+"theme features custom social menu and also you have the ability to choose "
+"the layout option for each of the different pages/posts individually. This "
+"theme also supports all 10 post formats so that you can show the contents "
+"uniquely according to the post formats used in your site. You can see the "
+"demo of this theme through this link: https://demo.napitwptech.com/masonry-"
+"brick/ and get free theme support from this link: https://support."
+"napitwptech.com/forums/forum/masonry-brick/."
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://napitwptech.com/themes/"
 msgstr ""
