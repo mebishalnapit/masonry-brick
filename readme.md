@@ -43,6 +43,7 @@ If you would like to contribute to the translations of this theme to your native
 ## CHANGELOG
 #### VERSION TBD
 * BxSlider updated to version 4.2.12
+* Stickyjs updated to 1.0.4
 
 #### VERSION 1.0.3
 * Add theme support for customizer selective refresh for theme bundled widgets
