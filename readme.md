@@ -41,6 +41,9 @@ All the available options of this theme can be used from Appearance > Customize.
 If you would like to contribute to the translations of this theme to your native language, then, you can visit this link: https://translate.wordpress.org/projects/wp-themes/masonry-brick/ and then contribute to the translation.
 
 ## CHANGELOG
+#### VERSION TBD
+* BxSlider updated to version 4.2.12
+
 #### VERSION 1.0.3
 * Add theme support for customizer selective refresh for theme bundled widgets
 
