@@ -20,8 +20,24 @@
 
 <body <?php body_class(); ?>>
 <?php do_action( 'masonry_brick_before' ); ?>
+
+<?php
+/**
+ * WordPress function to load custom scripts after body.
+ *
+ * Introduced in WordPress 5.2.0
+ */
+if ( function_exists( 'wp_body_open' ) ) {
+	wp_body_open();
+} else {
+	do_action( 'wp_body_open' );
+}
+?>
+
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'masonry-brick' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content">
+		<?php esc_html_e( 'Skip to content', 'masonry-brick' ); ?>
+	</a>
 
 	<header id="masthead" class="site-header" role="banner">
 		<?php if ( ( get_theme_mod( 'masonry_brick_header_text' ) != '' ) || ( has_nav_menu( 'social' ) ) ) : ?>
@@ -88,8 +104,17 @@
 				}
 				?>
 
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'masonry-brick' ); ?></button>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+					<?php esc_html_e( 'Menu', 'masonry-brick' ); ?>
+				</button>
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'primary',
+						'menu_id'        => 'primary-menu',
+					)
+				);
+				?>
 			</div>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
