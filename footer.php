@@ -8,6 +8,7 @@
  *
  * @package Masonry Brick
  */
+
 ?>
 
 				</div>
@@ -24,13 +25,15 @@
 
 							<div class="footer-menu">
 								<?php
-								if ( has_nav_menu( 'footer' ) ) {
-									wp_nav_menu( array(
-										'theme_location' => 'footer',
-										'depth'          => '-1',
-										'menu_id'        => 'footer-menu',
-									) );
-								}
+								if ( has_nav_menu( 'footer' ) ) :
+									wp_nav_menu(
+										array(
+											'theme_location' => 'footer',
+											'depth'          => '-1',
+											'menu_id'        => 'footer-menu',
+										)
+									);
+								endif;
 								?>
 							</div>
 						</div>
@@ -39,7 +42,7 @@
 			</footer><!-- #colophon -->
 
 			<a href="#masthead" id="scroll-up"><i class="fa fa-arrow-up"></i></a>
-			<?php do_action('masonry_brick_after_footer'); ?>
+			<?php do_action( 'masonry_brick_after_footer' ); ?>
 		</div><!-- #page -->
 
 	<?php wp_footer(); ?>
