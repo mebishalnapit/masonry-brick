@@ -8,6 +8,7 @@
  *
  * @package Masonry Brick
  */
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -60,7 +61,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 		<?php if ( ( get_header_image() || function_exists( 'the_custom_header_markup' ) ) && ( 'blank' == get_header_textcolor() ) ) : ?>
 			<div class="masonry-brick-header-image header-image">
 				<?php
-				// Display the header video and header image
+				// Display the header video and header image.
 				if ( function_exists( 'the_custom_header_markup' ) ) :
 					the_custom_header_markup();
 				else :
@@ -78,7 +79,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 		endif;
 		?>
 
-		<?php masonry_brick_header_text_logo(); // displaying the header text and logo as requirement ?>
+		<?php masonry_brick_header_text_logo(); // Displaying the header text and logo as requirement. ?>
 
 		<?php echo '</div>'; ?>
 
